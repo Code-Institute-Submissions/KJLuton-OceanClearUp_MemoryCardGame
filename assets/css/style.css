@@ -67,3 +67,8 @@ img {
 .tile-front-face, .tile-back-face {
     position: absolute;
 }
+
+
+.game-tile.turnTileOver {
+    transform: rotateY(180deg);
+}
