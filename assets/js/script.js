@@ -37,6 +37,7 @@ function checkForMatch() {
     if (firstTile.dataset.image === secondTile.dataset.image) {
         //if tiles are a match
         disableTiles();
+        incrementScore();
     } else {
         //if tiles are NOT a match
         unturnTiles();
@@ -58,6 +59,11 @@ function unturnTiles() {
         secondTile.classList.remove('turnTileOver');
         lockBoard = false;
     }, 900);
+}
+
+function incrementScore(){
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
 tiles.forEach(tiles => {
