@@ -114,7 +114,21 @@ User 3:
 
 ### Code Validation
 
-### Issues Found During Site Development
+### Issues Found During Game Development
+
+- getting squares to sit nicely on a grid and have one card overlay the other
+- disable cards timeout
+- bug: if flip tiles fast it thinks two incorrect tiles are the same and overites script. 
+
+
+Tiles weren't disabling: 
+//if tiles are a match
+function disableTiles() {
+    firstTile.removeeventListener('click', turnTileOver);
+    secondTile.removeeventListener('click', turnTileOver);
+}
+
+Due to small case e being used 
 
 [Back to table of contents](#table-of-contents)
 _______

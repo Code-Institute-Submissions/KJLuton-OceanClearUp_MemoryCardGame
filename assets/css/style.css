@@ -44,31 +44,42 @@ h3 {
     position: relative;
 }
 
-img {
-    width: 150px;
-    height: 150px;
-}
-
-.game-tile {
-    display: inline;
-    height: 150px;
-    width: 150px;
-    background-color: white;
-}
-
 .gamegrid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4,auto);
     position: absolute;
     grid-gap: 10px;
+    perspective: 1000px;
 }
+
+/* --------- Tiles */
+.game-tile {
+    display: inline;
+    height: 150px;
+    width: 150px;
+    transform-style: preserve-3d;
+    transition: transform.5s;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
 
 .tile-front-face, .tile-back-face {
     position: absolute;
+    backface-visibility: hidden;
+}
+
+.tile-front-face {
+    transform: rotateY(180deg);
 }
 
 
 .game-tile.turnTileOver {
     transform: rotateY(180deg);
 }
+

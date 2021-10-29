@@ -1,23 +1,65 @@
- //Wait for the DOM to finish loading before running game 
-        
-        function runGame(){
+//Wait for the DOM to finish loading before running game 
 
-        }
+//if(document.readyState === 'loading') {
+//    document.addEventListener("DOMContentLoaded", gameready());
+//} else {
+////    gameready();
+//}
 
-        const tiles = document.querySelectorAll('.game-tile');
+//function gameready()
 
-        function turnTileOver(){
-            this.classList.toggle('turnTileOver');
+const tiles = document.querySelectorAll('.game-tile');
 
-        }
+let hasTurnedTileOver = false;
+let lockBoard = false;
+let firstTile, secondTile;
 
-        tiles.forEach(tiles => {tiles.addEventListener('click', turnTileOver)
-            
-        });
+function turnTileOver() {
+    if (lockBoard) return;
+    this.classList.add('turnTileOver');
 
-        function checkTileMatch(){
+    if (!hasTurnedTileOver) {
+        //first click
+        hasTurnedTileOver = true;
+        firstTile = this;
+    } else {
+        //second click
+        hasTurnedTileOver = false;
+        secondTile = this;
 
-        }
+        checkForMatch()
 
-        function incrementScore(){
-        }
+    }
+}
+
+//Check that tiles are a match
+function checkForMatch() {
+    if (firstTile.dataset.image === secondTile.dataset.image) {
+        //if tiles are a match
+        disableTiles();
+    } else {
+        //if tiles are NOT a match
+        unturnTiles();
+    }
+}
+
+//if tiles are a match
+function disableTiles() {
+    firstTile.removeEventListener('click', turnTileOver);
+    secondTile.removeEventListener('click', turnTileOver);
+}
+
+//if tiles are NOT a match
+function unturnTiles() {
+    lockBoard = true;
+
+    setTimeout(() => {
+        firstTile.classList.remove('turnTileOver');
+        secondTile.classList.remove('turnTileOver');
+        lockBoard = false;
+    }, 900);
+}
+
+tiles.forEach(tiles => {
+    tiles.addEventListener('click', turnTileOver);
+});
