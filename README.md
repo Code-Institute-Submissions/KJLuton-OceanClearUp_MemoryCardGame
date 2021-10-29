@@ -61,6 +61,7 @@ The main colours used in this project are:
 ### Fonts
 
 The fonts are installed from [Google Fonts](https://fonts.google.com/):
+https://fonts.google.com/specimen/Gluten#standard-styles 
 
 ### Images
 
