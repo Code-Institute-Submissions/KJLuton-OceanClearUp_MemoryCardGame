@@ -4,6 +4,7 @@ body {
     background-color: #009dc4;
     font-family: "Gluten", sans-serif;
     color: rgb(255,250,250);
+    height: 100vh;
 }
 
 h1 {
@@ -25,14 +26,44 @@ h3 {
     text-align: center;
     background-color:#20b2ab;
     padding: 50px;
+    position: relative;
+}
+
+/* --------- score area */
+.score-area {
+    padding: 20px;
 }
 
 /* --------- Game area */
 .game-container {
     background-color: cadetblue;
-    height: 70vh
+    height: 70vh;
+    width: 70vw;
+    margin: 20px;
+    justify-content: center;
+    position: relative;
 }
 
-.game-area {
-    background-color: chartreuse;
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.game-tile {
+    display: inline;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+
+.gamegrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,auto);
+    position: absolute;
+    grid-gap: 10px;
+}
+
+.tile-front-face, .tile-back-face {
+    position: absolute;
 }

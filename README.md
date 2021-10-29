@@ -130,6 +130,12 @@ _______
 ## Media
 
 #### Images: 
+
+Bin bag: https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#
+Fishing net: https://www.subpng.com/png-4wsq1u/ 
+plastic bottle: http://clipart-library.com/clipart/422887.htm
+
+
   
 #### README.md File Assistance
 
