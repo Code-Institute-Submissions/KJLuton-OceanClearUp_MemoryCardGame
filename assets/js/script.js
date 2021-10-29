@@ -66,6 +66,17 @@ function incrementScore(){
     document.getElementById("score").innerText = ++oldScore;
 }
 
+//    var x = setInterval(function(){
+
+//let countdownElement = document.getElementsById('countdown');
+//var seconds = 100;
+
+////if (distance < 0) {
+ //   clearInterval(x);
+ //   document.getElementById("countdown").innerHTML = "GAME OVER";
+ // }
+//}, 1000);
+
 tiles.forEach(tiles => {
     tiles.addEventListener('click', turnTileOver);
 });
