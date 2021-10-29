@@ -1,0 +1,38 @@
+/* --------- Global style */
+
+body {
+    background-color: #009dc4;
+    font-family: "Gluten", sans-serif;
+    color: rgb(255,250,250);
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 2vh;
+}
+
+
+/* --------- Heading and welcome area */
+
+.welcome-container {
+    text-align: center;
+    background-color:#20b2ab;
+    padding: 50px;
+}
+
+/* --------- Game area */
+.game-container {
+    background-color: cadetblue;
+    height: 70vh
+}
+
+.game-area {
+    background-color: chartreuse;
+}
