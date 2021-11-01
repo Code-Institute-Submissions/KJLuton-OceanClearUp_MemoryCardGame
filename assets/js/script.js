@@ -1,6 +1,5 @@
 //Wait for the DOM to finish loading before running game 
-
-//if(document.readyState === 'loading') {
+if(document.readyState === 'loading') {
 //    document.addEventListener("DOMContentLoaded", gameready());
 //} else {
 ////    gameready();
@@ -66,8 +65,9 @@ function incrementScore(){
     document.getElementById("score").innerText = ++oldScore;
 }
 
-//    var x = setInterval(function(){
-
+//setTimeout(() => {
+    
+//}, timeout);
 //let countdownElement = document.getElementsById('countdown');
 //var seconds = 100;
 
@@ -80,3 +80,4 @@ function incrementScore(){
 tiles.forEach(tiles => {
     tiles.addEventListener('click', turnTileOver);
 });
+}
