@@ -18,25 +18,25 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Navbar 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Start New Game</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">New Player</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>-->
-        <!-- /.navbar -->
+       <!--  Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="game.html">Start New Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">New Player</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
     </header>
     <!-- /.header -->
     <!-- Welcome section -->
@@ -49,76 +49,17 @@
     <!-- /. Welcome section -->
 
     <section class="container center">
-        <div class="game-container center">
-            <div class="score-area center">
-                <p class="score matches">Matches Found: <span id="score">0</span></p>
-                <p class="score countdown">Time left: <span id="countdown">50</span></p>
+        <div class="game-rules center">
+            <div>
+                <h2>Hello, please insert your name below</h2>
+                <p>Did you know that the ocean is full of plastics? By 2053 we could be in serious trouble. Can you help save our oceans?</p>
             </div>
-            <div class="gamegrid container center">
-                <div class="game-tile" data-image="binbag">
-                    <img class="tile-front-face" src="./assets/images/binbag.png" alt="bin bag">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="binbag">
-                    <img class="tile-front-face" src="./assets/images/binbag.png" alt="bin bag">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="waterbottle">
-                    <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="waterbottle">
-                    <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="fishingnet">
-                    <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="fishingnet">
-                    <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="oilspill">
-                    <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="oilspill">
-                    <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="foodcarton">
-                    <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="foodcarton">
-                    <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="plasticstraws">
-                    <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="plasticstraws">
-                    <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="cigaretteend">
-                    <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="cigaretteend">
-                    <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="glassbottles">
-                    <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
-                <div class="game-tile" data-image="glassbottles">
-                    <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
-                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-                </div>
+           <!-- <form id="playername">
+                <label for="fname">Player Name:</label><br>
+                <input type="text" id="fname"><br>
+            </form>-->
+            <div>
+                <a href="/game.html" class="button center">Start New Game</a>
             </div>
         </div>
     </section>
