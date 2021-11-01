@@ -1,13 +1,8 @@
 //Wait for the DOM to finish loading before running game 
-if(document.readyState === 'loading') {
-//    document.addEventListener("DOMContentLoaded", gameready());
-//} else {
-////    gameready();
-//}
-
-//function gameready()
-
+//Actions during game play
 const tiles = document.querySelectorAll('.game-tile');
+
+shuffleTiles()
 
 let hasTurnedTileOver = false;
 let lockBoard = false;
@@ -27,7 +22,6 @@ function turnTileOver() {
         secondTile = this;
 
         checkForMatch()
-
     }
 }
 
@@ -37,6 +31,9 @@ function checkForMatch() {
         //if tiles are a match
         disableTiles();
         incrementScore();
+        //if all tiles matched 
+        //stopCountdown()
+        //if countDowntime stopped, record time on screen
     } else {
         //if tiles are NOT a match
         unturnTiles();
@@ -60,37 +57,47 @@ function unturnTiles() {
     }, 900);
 }
 
-function incrementScore(){
+function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
-function startCountdown() {
-    
-}
-
-function stopCountdown(){
+function stopCountdown() {
 
 }
 
 function resetBoard() {
-    
+
 }
 
+
+
 //setTimeout(() => {
-    
+
 //}, timeout);
 //let countdownElement = document.getElementsById('countdown');
 //var seconds = 100;
 
 ////if (distance < 0) {
- //   clearInterval(x);
- //   document.getElementById("countdown").innerHTML = "GAME OVER";
- // }
+//   clearInterval(x);
+//   document.getElementById("countdown").innerHTML = "GAME OVER";
+// }
 //}, 1000);
+
+
+function shuffleTiles () {
+
+}
+//function gameready()
+function gameReady(){
+
+}
+//Actions on game start
+function startCountdown() {
+
+}
 
 
 tiles.forEach(tiles => {
     tiles.addEventListener('click', turnTileOver);
 });
-}
