@@ -50,6 +50,7 @@ User 3:
 
 ### Game Page - Wireframe
 
+
 ### End Page - Wireframe
 
 ## Surface
@@ -105,6 +106,8 @@ _______
 
 ### Functionality Testing
 
+images not clear enough 
+
 ### User Stories Testing
 
 User 1:
@@ -149,6 +152,16 @@ _______
 Bin bag: https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#
 Fishing net: https://www.subpng.com/png-4wsq1u/ 
 plastic bottle: http://clipart-library.com/clipart/422887.htm
+oil barrel: https://www.vectorstock.com/royalty-free-vector/metal-barrel-with-oil-icon-cartoon-style-vector-12048361 
+food carton: https://www.pikpng.com/downpngs/owwoJo_1528906718-clipart-of-orange-juice-clip-art-orange/ 
+plastic straws: https://www.pngitem.com/download/xwJwob_transparent-plastic-cup-clipart-transparent-background-straw-clipart/
+cigarette end: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Pixabay</a> 
+glass bottle: https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy-drinks-diet-coke-clip-art-color-in-coke-bottle/
+
+
+dead fish: https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/ 
+pollution background: <a href="https://www.freepik.com/vectors/water">Water vector created by brgfx - www.freepik.com</a>
+
 
 
   
