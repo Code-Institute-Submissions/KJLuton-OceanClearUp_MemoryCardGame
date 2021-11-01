@@ -65,6 +65,18 @@ function incrementScore(){
     document.getElementById("score").innerText = ++oldScore;
 }
 
+function startCountdown() {
+    
+}
+
+function stopCountdown(){
+
+}
+
+function resetBoard() {
+    
+}
+
 //setTimeout(() => {
     
 //}, timeout);
@@ -76,6 +88,7 @@ function incrementScore(){
  //   document.getElementById("countdown").innerHTML = "GAME OVER";
  // }
 //}, 1000);
+
 
 tiles.forEach(tiles => {
     tiles.addEventListener('click', turnTileOver);
