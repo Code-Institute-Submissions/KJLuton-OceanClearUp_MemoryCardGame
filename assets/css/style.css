@@ -65,6 +65,7 @@ h3 {
 
 .gamegrid {
     display: grid;
+    padding: 20px;
     justify-content: center;
     grid-template-columns: repeat(4,auto);
     position: relative;
