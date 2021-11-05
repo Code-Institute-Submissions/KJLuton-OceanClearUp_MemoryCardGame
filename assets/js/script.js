@@ -37,7 +37,6 @@ function startGame() {
 	        //second click
 	        hasTurnedTileOver = false;
 	        secondTile = this;
-	
 
 	        checkForMatch()
 	    }
@@ -76,7 +75,7 @@ function startGame() {
 	        firstTile.classList.remove('turnTileOver');
 	        secondTile.classList.remove('turnTileOver');
 	        lockBoard = false;
-	    }, 900);
+	    }, 600);
 	}
 	
 
