@@ -20,7 +20,7 @@ function startGame() {
     }
 
 	let hasTurnedTileOver = false;
-	let lockBoard = false;
+	let lockBoard = true;
 	let firstTile, secondTile;
 	
 
