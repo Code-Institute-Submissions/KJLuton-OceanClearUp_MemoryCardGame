@@ -19,7 +19,6 @@ function gameReady() {
 
 }
 
-
 //Assistance with this code from here: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 //Initiates countdown timer and game start
 function startGame() {
@@ -130,7 +129,7 @@ function resetBoard() {
 
 
 //function shuffleTiles() {
-//	for (let i = this.tilesArray.length - 1; i > 0; 1--) {
+//	for (let i = this.tiles.length - 1; i > 0; 1--) {
 //		let randIndex = Math.floor(Math.random() * (i + 1));
 //		this.tilesArray[randIndex].style.order * i;
 //		this.tilesArray[i].style.order = randIndex;
