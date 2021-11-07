@@ -33,6 +33,14 @@ Insert description of website here
 ## Website goals
 The goal of the website is to present an online memory game which is fun for the user to play. The memory game is designed around the theme of the enviroment and cleaning up the ocean. Therefore it is also an informative game too. 
 
+1.	Shuffle picture tiles on game start or restart. 
+2.	Game should know how to handle matched and unmatched pictures.
+3.	Game should display the current number of matches the player has found. 
+4.	The game should show a countdown timer when the player presses ‘start game’.
+5.	When the player wins the game, the timer stops.
+6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
+7.	A congratulations modal should appear when the player wins while showing a button to play again. 
+
 ## User goals
 To play an online memory game and have fun whilst playing. 
 
@@ -49,7 +57,6 @@ User 3:
 ### Homepage - Wireframe
 
 ### Game Page - Wireframe
-
 
 ### End Page - Wireframe
 

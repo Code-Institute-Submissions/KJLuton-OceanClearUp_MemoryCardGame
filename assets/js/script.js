@@ -14,39 +14,76 @@ let firstTile, secondTile;
 
 
 function gameReady() {
-	document.getElementById("countdown").innerHTML = "50";
+	//document.getElementById("countdown").innerHTML = "50";
 	//pop up start modal 
 	//start music
 
+	//WHEN IMPLEMENTED, TIMER BREAKS.
+	//var shuffledTiles = shuffle(tiles);
+	//for (var i = 0; i < shuffledTiles.length; i++) {
+	//	[].forEach.call(shuffledTiles, function (item) {
+	//		deck.appendChild(item);
+	//	});
+	//}
+
 }
 
+
+
+
 //Assistance with this code from here: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
-//Initiates countdown timer and game start
+//Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
 	lockBoard = false;
+
 	var timeleft = 50;
 	var countdownTimer = setInterval(function () {
-		//if (document.getElementById("score") === (8)) {
-		//stopCountdown();
-		//} else 
+		//Timer run out - game over message
 		if (timeleft <= 0) {
 			clearInterval(countdownTimer);
 			document.getElementById("countdown").innerHTML = "GAME OVER";
-		} else {
+		} else if (document.getElementById("match-count") == (8)) {
+			console.log(winner)
+		//clearInterval(countdownTimer);
+		//document.getElementById("countdown").innerHTML = "WINNER";
+		} 
+		else { // timer continues until zero
 			document.getElementById("countdown").innerHTML = timeleft;
 		}
 		timeleft -= 1;
 	}, 1000);
 
 	//Hover over tiles
-$("div.game-tile").mouseenter(function() {
-	$(".tile-front-face, .tile-back-face").addClass("tile-hover");
-});
+	$("div.game-tile").mouseenter(function () {
+		$(".tile-front-face, .tile-back-face").addClass("tile-hover");
+	});
 
-$("div.game-tile").mouseleave(function() {
-	$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
-});
+	$("div.game-tile").mouseleave(function () {
+		$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
+	});
 
+}
+
+
+//on game win - remove green background and tiles. Show winner message.
+//$("div.game-container").click(function () {
+//	$("game-container").fadeTo(1000, 1);
+//});
+
+
+// Fisher-Yates (aka Knuth) Shuffle
+function shuffle(tiles) {
+	var currentIndex = tiles.length,
+		temporaryValue, randomIndex;
+
+	while (currentIndex !== 0) {
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+		temporaryValue = tiles[currentIndex];
+		tiles[currentIndex] = array[randomIndex];
+		tiles[randomIndex] = temporaryValue;
+	}
+	return array;
 }
 
 
@@ -101,8 +138,8 @@ function unturnTiles() {
 
 //Add to the score if tiles match
 function incrementScore() {
-	let oldScore = parseInt(document.getElementById("score").innerText);
-	document.getElementById("score").innerText = ++oldScore;
+	let oldScore = parseInt(document.getElementById("match-count").innerText);
+	document.getElementById("match-count").innerText = ++oldScore;
 }
 
 
@@ -114,6 +151,11 @@ function incrementScore() {
 //	}
 // }
 
+
+
+$('#myModal').modal('show')
+
+$().button('toggle')
 
 function resetBoard() {
 
