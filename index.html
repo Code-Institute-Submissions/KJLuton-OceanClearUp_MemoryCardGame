@@ -23,36 +23,27 @@
     <!-- Welcome section -->
     <div class="welcome-container">
         <h1 class="heading">Ocean Memory Game</h1>
-
-        <h3 class="welcome-message">Welcome to the game. Can you remember where the rubbish is and clean up the ocean?
-        </h3>
     </div>
     <!-- /. Welcome section -->
 
     <section class="container center">
         <div class="game-rules center">
             <div>
-                <h2>Hello, please insert your name below</h2>
+                <form action="/game.html">
+                <h2>Hello,</h2><input type="text" id="t1" placeholder="Please introduce yourself" aria-label="First name">
                 <p>Did you know that the ocean is full of plastics? By 2053 we could be in serious trouble. Can you help
                     save our oceans?</p>
-                    <form>
-                    <div class="row">
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                        </div>
-                        <div class="col-12">
-                            <a href="/game.html" class="button center">Start New Game</a>
-                        </div>
-                      </div>
-                    </form>
+                <h3 class="welcome-message">Hi <span id="player-name"></span>Welcome to the game. Can you remember where
+                    the rubbish is and clean up
+                    the
+                    ocean?
+
+                </h3>
+                    <div class="row center">
+                        <input type="submit" value="Submit Name" class="button" onclick="f1()" />
+                    </div>
+                </form>
             </div>
-            <!-- <form id="playername">
-                <label for="fname">Player Name:</label><br>
-                <input type="text" id="fname"><br>
-            </form>
-            <div>
-                <a href="/game.html" class="button center">Start New Game</a>
-            </div>-->
         </div>
     </section>
 

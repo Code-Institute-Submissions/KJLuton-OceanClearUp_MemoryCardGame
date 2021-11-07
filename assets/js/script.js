@@ -42,8 +42,6 @@ function startGame() {
 		if (timeleft <= 0) {
 			clearInterval(countdownTimer);
 			document.getElementById("countdown").innerHTML = "GAME OVER";
-		} else if (document.getElementById("match-count") == (8)) {
-			console.log(winner)
 		//clearInterval(countdownTimer);
 		//document.getElementById("countdown").innerHTML = "WINNER";
 		} 
@@ -152,14 +150,20 @@ function incrementScore() {
 // }
 
 
+//$('#myModal').modal('show')
 
-$('#myModal').modal('show')
-
-$().button('toggle')
+//$().button('toggle')
 
 function resetBoard() {
 
+}
 
+
+function f1 (){
+	var obj = document.getElementById("t1");
+	var str = "Hi "+obj.value;
+	var obj2 = document.getElementById("p1");
+	obj2.innerHTML=str;
 }
 
 
