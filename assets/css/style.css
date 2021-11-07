@@ -85,12 +85,11 @@ h3 {
 
 }
 
-.tile-front-face,
-.tile-back-face:hover {
-border-style: solid;
-  border-width: 5px;
-  border-color: blueviolet;
-  }
+.tile-hover {
+    border-style: solid;
+    border-width: 5px;
+    border-color: blueviolet;
+}
 
 img {
     width: 150px;

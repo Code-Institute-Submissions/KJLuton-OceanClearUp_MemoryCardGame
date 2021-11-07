@@ -12,6 +12,17 @@ let hasTurnedTileOver = false;
 let firstTile, secondTile;
 
 
+$("div.game-tile").mouseenter(function() {
+	$(".tile-front-face, .tile-back-face").addClass("tile-hover");
+});
+
+$("div.game-tile").mouseleave(function() {
+	$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
+});
+
+
+
+
 function gameReady() {
 	document.getElementById("countdown").innerHTML = "50";
 	//pop up start modal 
