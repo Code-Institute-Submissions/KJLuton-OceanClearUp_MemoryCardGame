@@ -12,16 +12,6 @@ let hasTurnedTileOver = false;
 let firstTile, secondTile;
 
 
-$("div.game-tile").mouseenter(function() {
-	$(".tile-front-face, .tile-back-face").addClass("tile-hover");
-});
-
-$("div.game-tile").mouseleave(function() {
-	$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
-});
-
-
-
 
 function gameReady() {
 	document.getElementById("countdown").innerHTML = "50";
@@ -47,6 +37,15 @@ function startGame() {
 		}
 		timeleft -= 1;
 	}, 1000);
+
+	//Hover over tiles
+$("div.game-tile").mouseenter(function() {
+	$(".tile-front-face, .tile-back-face").addClass("tile-hover");
+});
+
+$("div.game-tile").mouseleave(function() {
+	$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
+});
 
 }
 
