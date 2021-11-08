@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,17 +31,13 @@
         <div class="game-rules center">
             <div>
                 <form>
-                    <h3>Hello, let's get to know each other a little better. Please introduce yourself by typing out
-                        your name in the box provided: </h3>
-
-                    <div class="row center">
-                        
-                      
-                            <p id="player-name"></p>
-                            <input type="text" id="player-name-entry" placeholder="your name" aria-label="First name">
-                            <input type="button" id="player-name-entry" value="Click to add name" class="button-sm"
-                                onclick="playerName();hidePlayernamebox()" />
-                    
+                    <p>Hello, let's get to know each other a little better. Please introduce yourself by typing out
+                        your name in the box provided: </p>
+                    <div class="form-row center">
+                        <p id="player-name"></p>
+                        <input type="text" id="player-name-entry" placeholder="your name" aria-label="First name">
+                        <input type="button" id="player-name-entry" value="Click to add name" class="button-sm"
+                            onclick="playerName();hidePlayernamebox()" />
                     </div>
                 </form>
                 <p>I am hoping you can help me. I've recently learned that the ocean is the origin and the engine of all
@@ -58,6 +55,7 @@
                     for! I have created this matching exercise for you to identify the biggest problems. Good luck, and
                     don't take too long, there is a time limit!"</p>
             </div>
+            <button class="button center" onclick="window.location.href='/game.html'">PLAY GAME</button>
         </div>
     </section>
 

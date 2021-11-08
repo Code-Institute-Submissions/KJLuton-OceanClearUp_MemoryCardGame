@@ -159,12 +159,11 @@ function resetBoard() {
 }
 
 
-
 //Welcome page
 //Allowing player to customise the game and add their name.
 function playerName(){
 	var obj = document.getElementById("player-name-entry");
-	var str = "Thanks for introducing yourself "+obj.value+" It's great to have you here.";
+	var str = "Hello "+obj.value+" It's great to have you here.";
 	var obj2 = document.getElementById("player-name");
 	obj2.innerHTML=str;
 }
@@ -178,6 +177,8 @@ function hidePlayernamebox() {
 		getName.style.display = "none";
 	}
   }
+
+
 
 
 //setTimeout(() => {

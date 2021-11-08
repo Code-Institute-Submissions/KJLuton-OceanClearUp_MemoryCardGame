@@ -16,13 +16,25 @@ body {
 
 h1 {
     font-size: 5vh;
+    font-family: 'Gluten', cursive;
 }
 
 h2 {
     font-size: 3vh;
+    font-family: 'Gluten', cursive;
 }
 
 h3 {
+    font-size: 2vh;
+    font-family: 'Gluten', cursive;
+}
+
+p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 3vh;
+}
+
+.how-to-play {
     font-size: 2vh;
 }
 
@@ -39,6 +51,48 @@ h3 {
     float: left;
 }
 
+/* --------- Buttons */
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: darkmagenta;
+    color: snow;
+    border: solid;
+    padding: 10px;
+}
+
+.button-sm {
+    width: 150px;
+    height: 30px;
+    background-color: darkmagenta;
+    color: snow;
+    border: solid;
+    font-size: small;
+    vertical-align: middle;
+}
+
+.start-button {
+    background: #004085;
+}
+
+.option-buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+/* --------- /. Buttons */
+
+/* --------- Welcome Page */
+.player-name {
+    font-size: 1.5rem;
+}
+
+/* --------- /. Welcome Page */
+
+
+
+/* --------- Game Page */
 /* --------- Heading and welcome area */
 
 .welcome-container {
@@ -134,42 +188,7 @@ img {
     transform: rotateY(180deg);
 }
 
-
-.button {
-    width: 200px;
-    height: 50px;
-    background-color: darkmagenta;
-    color: snow;
-    border: solid;
-    padding: 10px;
-}
-
-.button-sm {
-    width: 150px;
-    height: 30px;
-    background-color: darkmagenta;
-    color: snow;
-    border: solid;
-    font-size: small;
-    vertical-align: middle;
-}
-
-.button-curser {
-    cursor: pointer;
-}
-
-.how-to-play-curser {
-    cursor: help;
-}
-
-.start-button {
-    background: #004085;
-}
-
-.option-buttons {
-    text-align: center;
-    padding: 20px;
-}
+/* --------- /. Tiles */
 
 .game-rules {
     text-align: center;
@@ -177,6 +196,9 @@ img {
     height: 100%;
     width: 100%;
     padding: 30px;
-    margin: 15px;
     position: relative;
+    margin-top: 50px;
 }
+
+
+/* --------- /. Game Page */
