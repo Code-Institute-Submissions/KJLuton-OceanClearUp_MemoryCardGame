@@ -28,7 +28,7 @@ h3 {
 
 .score {
     font-size: 3vh;
-    color: crimson;
+    color: #004085;
 }
 
 .countdown {
@@ -46,6 +46,19 @@ h3 {
     background-color: #20b2ab;
     padding: 50px 50px 10px 50px;
     position: relative;
+}
+
+/* --------- How to play modal */
+.modal-content {
+    background-color: #004085;
+}
+
+.modal-title {
+    flex: auto;
+}
+
+.close {
+    color: #e9f4ff
 }
 
 /* --------- score area and countdown*/
@@ -129,6 +142,28 @@ img {
     color: snow;
     border: solid;
     padding: 10px;
+}
+
+.button-sm {
+    width: 150px;
+    height: 30px;
+    background-color: darkmagenta;
+    color: snow;
+    border: solid;
+    font-size: small;
+    vertical-align: middle;
+}
+
+.button-curser {
+    cursor: pointer;
+}
+
+.how-to-play-curser {
+    cursor: help;
+}
+
+.start-button {
+    background: #004085;
 }
 
 .option-buttons {

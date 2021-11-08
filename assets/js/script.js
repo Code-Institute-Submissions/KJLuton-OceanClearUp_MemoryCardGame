@@ -159,12 +159,25 @@ function resetBoard() {
 }
 
 
-function f1 (){
-	var obj = document.getElementById("t1");
+
+//Welcome page
+//Allowing player to customise the game and add their name.
+function playerName(){
+	var obj = document.getElementById("player-name-entry");
 	var str = "Thanks for introducing yourself "+obj.value+" It's great to have you here.";
-	var obj2 = document.getElementById("p1");
+	var obj2 = document.getElementById("player-name");
 	obj2.innerHTML=str;
 }
+
+//Removing name box and button when player name added.
+function hidePlayernamebox() {
+	var getName = document.getElementById("player-name-entry");
+	if (getName.style.display === "none") {
+		getName.style.display = "block";
+	} else {
+		getName.style.display = "none";
+	}
+  }
 
 
 //setTimeout(() => {

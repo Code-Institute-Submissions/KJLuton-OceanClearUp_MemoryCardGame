@@ -28,17 +28,48 @@
                         the
                         ocean?
                     </h3>
-                    <h3>HOW TO PLAY</h3>
-                    <p>Once the game has loaded, you have 50 seconds to find all the matching picture cards.
-                        Click on a picture card to turn it over and reveal an image of something that pollutes our
-                        oceans. If you can find its pair, you have found a match! Once you find a match, it will stay
-                        face up and your matched cards score will go up by 1. If you have not chosen two identical
-                        cards, they will automatically turn back around.
-                        To win the game you must find all the matches before the time runs out. The ocean and its
-                        wildlife are counting on you! </p>
+                    <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
                     <div class="option-buttons">
-                        <button class="button center" onclick="startGame()">Start New Game</button>
-                        <a href="/index.html" class="button center">New Player</a>
+                        <button class="button-sm center button-curser" onclick="startGame()">Start New Game</button>
+                        <button class="button-sm center button-curser" onclick="window.location.href='/index.html'">New Player</button>
+                        <button type="button" class="button-sm how-to-play-curser" data-toggle="modal" data-target="#howtoplay">
+                            How to play
+                        </button> 
+                        <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog"
+                            aria-labelledby="howtoplay-modal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title center" id="howtoplay-modal">HOW TO PLAY</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Once the game has loaded, you have 50 seconds to find all the matching
+                                            picture cards.
+                                            Click on a picture card to turn it over and reveal an image of something
+                                            that
+                                            pollutes our oceans.
+                                            <br>
+                                            <br>
+                                            If you can find its pair, you have found a match! Once you find a match, it
+                                            will stay face up and your matched cards score will go up by 1. If you have
+                                            not chosen two
+                                            identical cards, they will automatically turn back around.
+                                            <br>
+                                            <br>
+                                            To win the game you must find all the matches before the time runs out. The
+                                            ocean
+                                            and its wildlife are counting on you!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
