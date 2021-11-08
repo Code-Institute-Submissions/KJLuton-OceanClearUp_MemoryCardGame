@@ -95,7 +95,6 @@ p {
 /* --------- /. Welcome Page */
 
 
-
 /* --------- Game Page */
 /* --------- Heading and welcome area */
 
@@ -127,7 +126,6 @@ p {
     justify-content: space-between;
 }
 
-
 /* --------- Game area */
 .game-container {
     background-color: #044e156b;
@@ -154,6 +152,21 @@ p {
 }
 
 /* --------- Tiles */
+
+.tiles {
+    list-style-type: none;
+    width: 85%;
+    background: #716F71;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
 .game-tile {
     display: inline;
     height: 150px;
@@ -170,7 +183,6 @@ img {
     border-radius: inherit;
 }
 
-
 .tile-front-face,
 .tile-back-face {
     position: absolute;
@@ -181,13 +193,12 @@ img {
 .tile-back-face:hover {
     border-style: solid;
     border-width: 5px;
-    border-color: #e9f4ff ;
-  }
+    border-color: #e9f4ff;
+}
 
 .tile-front-face {
     transform: rotateY(180deg);
 }
-
 
 .game-tile.turnTileOver {
     transform: rotateY(180deg);
@@ -204,6 +215,5 @@ img {
     position: relative;
     margin-top: 50px;
 }
-
 
 /* --------- /. Game Page */
