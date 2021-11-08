@@ -11,7 +11,7 @@ Insert description of website here
 # Table of Contents
 
 1. [UX](#ux)
-    - [Website owner business goals](#website-owner-business-goals)
+    - [Game goals](#game-goals)
     - [User goals](#user-goals)
         - [New user goals](##new-user-goals)
         - [Returning user goals](##returning-user-goals)
@@ -30,16 +30,8 @@ Insert description of website here
 
 # UX
 
-## Website goals
+## Game goals
 The goal of the website is to present an online memory game which is fun for the user to play. The memory game is designed around the theme of the enviroment and cleaning up the ocean. Therefore it is also an informative game too. 
-
-1.	Shuffle picture tiles on game start or restart. 
-2.	Game should know how to handle matched and unmatched pictures.
-3.	Game should display the current number of matches the player has found. 
-4.	The game should show a countdown timer when the player presses ‘start game’.
-5.	When the player wins the game, the timer stops.
-6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
-7.	A congratulations modal should appear when the player wins while showing a button to play again. 
 
 ### How to play
 Once the game has loaded, you have 50 seconds to find all the matching picture cards. 
@@ -54,10 +46,13 @@ To play an online memory game and have fun whilst playing.
 ## User stories
 
 User 1: 
+12 year old learning about the ocean and effects of single use plastic. Wants to learn 
 
 User 2:
+18 year old looking to play games on the internet. 
 
 User 3:
+
 
 ## Wireframes
 
@@ -83,28 +78,30 @@ https://fonts.google.com/specimen/Gluten#standard-styles
 [Back to table of contents](#table-of-contents)
 
 _______
-# Features
+# Features and Functions
 
-The website consists of 3 pages. 
+The website consists of 2 pages. 
+1) A welcome page 
+2) A game page 
 
-The website has the below features: 
+The welcome page has the following features: 
 
-## Existing Features
+1. Welcome the user to the game. 
+2. Offer a customisable aspect to the game by asking the player their name. 
 
-### Elements on every page
+The gamepage has the following features: 
 
-#### Navigation bar 
-
-#### Footer 
-
-#### Banner Images
-
-### Homepage
-
-#### Welcome banner and hero image
+1.	Shuffle picture tiles on game start or restart. 
+2.	Game should know how to handle matched and unmatched pictures.
+3.	Game should display the current number of matches the player has found. 
+4.	The game should show a countdown timer when the player presses ‘start game’.
+5.	When the player wins the game, the timer stops.
+6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
+7.	A congratulations modal should appear when the player wins while showing a button to play again. 
 
 ## Future implementations
 
+when cards are matched, make them disappear as though the game player is cleaning the ocean. 
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -137,6 +134,11 @@ User 3:
 - getting squares to sit nicely on a grid and have one card overlay the other
 - disable cards timeout
 - bug: if flip tiles fast it thinks two incorrect tiles are the same and overites script. 
+- setting up hover element - treating all the game-tiles as a joint element instead of indidivudal tiles.
+- If the same tile is clicked twice then it registers as a match. 
+- Working out how to stop timer - when number of matches === (tiles.length/2), stop timer. Doesn't recognise "score" as "8" so it is always falsy. 
+
+
 
 
 Tiles weren't disabling: 
