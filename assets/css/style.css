@@ -84,8 +84,12 @@ p {
 /* --------- /. Buttons */
 
 /* --------- Welcome Page */
-.player-name {
-    font-size: 1.5rem;
+#player-name {
+    font-size: 5rem;
+}
+
+#welcome-message {
+    display: none;
 }
 
 /* --------- /. Welcome Page */
@@ -160,12 +164,6 @@ p {
 
 }
 
-.tile-hover {
-    border-style: solid;
-    border-width: 5px;
-    border-color: blueviolet;
-}
-
 img {
     width: 150px;
     height: 150px;
@@ -178,6 +176,13 @@ img {
     position: absolute;
     backface-visibility: hidden;
 }
+
+.tile-front-face,
+.tile-back-face:hover {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e9f4ff ;
+  }
 
 .tile-front-face {
     transform: rotateY(180deg);
@@ -192,7 +197,7 @@ img {
 
 .game-rules {
     text-align: center;
-    background-color: #044e156b;
+    background-color: #004085;
     height: 100%;
     width: 100%;
     padding: 30px;

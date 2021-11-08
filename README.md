@@ -5,7 +5,7 @@ Insert mock up here
 
 Insert description of website here
 
-## [View live website in GitHub pages](https://kjluton.github.io/ /)
+## [View live website in GitHub pages](https://github.com/KJLuton/Milestoneproject2/)
 ---
 
 # Table of Contents

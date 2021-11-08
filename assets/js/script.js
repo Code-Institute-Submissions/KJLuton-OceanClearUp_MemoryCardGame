@@ -12,22 +12,12 @@ let hasTurnedTileOver = false;
 let firstTile, secondTile;
 
 
-
 function gameReady() {
 	//document.getElementById("countdown").innerHTML = "50";
 	//pop up start modal 
 	//start music
 
-	//WHEN IMPLEMENTED, TIMER BREAKS.
-	//var shuffledTiles = shuffle(tiles);
-	//for (var i = 0; i < shuffledTiles.length; i++) {
-	//	[].forEach.call(shuffledTiles, function (item) {
-	//		deck.appendChild(item);
-	//	});
-	//}
-
 }
-
 
 
 
@@ -36,7 +26,7 @@ function gameReady() {
 function startGame() {
 	lockBoard = false;
 
-	var timeleft = 50;
+	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
 		//Timer run out - game over message
 		if (timeleft <= 0) {
@@ -50,15 +40,6 @@ function startGame() {
 		}
 		timeleft -= 1;
 	}, 1000);
-
-	//Hover over tiles
-	$("div.game-tile").mouseenter(function () {
-		$(".tile-front-face, .tile-back-face").addClass("tile-hover");
-	});
-
-	$("div.game-tile").mouseleave(function () {
-		$(".tile-front-face, .tile-back-face").removeClass("tile-hover");
-	});
 
 }
 
@@ -163,22 +144,19 @@ function resetBoard() {
 //Allowing player to customise the game and add their name.
 function playerName(){
 	var obj = document.getElementById("player-name-entry");
-	var str = "Hello "+obj.value+" It's great to have you here.";
+	var str = "Hello "+obj.value+",";
 	var obj2 = document.getElementById("player-name");
 	obj2.innerHTML=str;
 }
 
 //Removing name box and button when player name added.
 function hidePlayernamebox() {
-	var getName = document.getElementById("player-name-entry");
-	if (getName.style.display === "none") {
-		getName.style.display = "block";
-	} else {
-		getName.style.display = "none";
-	}
+	var getName = $("#player-name-entry-button");
+	getName.hide()
+	$("#player-name-entry").hide()
+	$("#introduction").hide()
+	$("#welcome-message").show()
   }
-
-
 
 
 //setTimeout(() => {
