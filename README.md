@@ -75,6 +75,8 @@ https://fonts.google.com/specimen/Gluten#standard-styles
 
 ### Images
 
+https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html
+
 [Back to table of contents](#table-of-contents)
 
 _______
@@ -140,7 +142,6 @@ User 3:
 
 
 
-
 Tiles weren't disabling: 
 //if tiles are a match
 function disableTiles() {
@@ -158,6 +159,8 @@ _______
 [Back to table of contents](#table-of-contents)
 _______
 # Credits
+
+Show / hide features: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp 
 
 ## Content
 

@@ -1,13 +1,18 @@
 /* --------- Global style */
 
+html { 
+    background: url('/assets/images/underthesea.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body {
     margin: 0;
-    background-image: url('/assets/images/underthesea.jpg');
-    background-color: cornflowerblue;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Gluten", sans-serif;
+    font-family: 'Gluten', cursive;
     color: rgb(255, 250, 250);
+    background: none;
 }
 
 .row {
@@ -15,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: 5vh;
+    font-size: 4vh;
     font-family: 'Gluten', cursive;
 }
 
@@ -93,6 +98,74 @@ p {
     display: none;
 }
 
+/* --------- bubbles */
+.bubble-container {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+}
+
+#bubble1 {
+    position: relative;
+    float: left;
+    animation: floatBubble 7.5s infinite  normal ease-out;
+    z-index: 1000;
+}
+
+#bubble2 {
+    position: relative;
+    float: right;
+    animation: floatBubble 8s infinite  normal ease-out;
+    z-index: 900;
+}
+
+#bubble3 {
+    position: relative;
+    animation: floatBubble 8.5s infinite  normal ease-out;
+    z-index: 800;
+}
+
+#bubble4 {
+    position: relative;
+    float: right;
+    animation: floatBubble 11s infinite  normal ease-out;
+    z-index: 1000;
+}
+
+#bubble5 {
+    position: relative;
+    float: right;
+    animation: floatBubble 7s infinite  normal ease-out;
+    z-index: 800;
+}
+
+#bubble6 {
+    position: relative;
+    float: right;
+    animation: floatBubble 10s infinite  normal ease-out;
+    z-index: 900;
+}
+
+
+@-webkit-keyframes floatBubble {
+    0% {
+        top:2000px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:2000px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+/* --------- /. bubbles */
+
 /* --------- /. Welcome Page */
 
 
@@ -102,8 +175,9 @@ p {
 .welcome-container {
     text-align: center;
     background-color: #20b2ab;
-    padding: 50px 50px 10px 50px;
-    position: relative;
+    padding: 50px;
+    width: 100%;
+    z-index: 1;
 }
 
 /* --------- How to play modal */
