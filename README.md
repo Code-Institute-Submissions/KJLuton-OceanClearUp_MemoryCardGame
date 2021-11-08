@@ -64,14 +64,14 @@ User 3:
 ### Homepage - Wireframe
 
 ### Game Page - Wireframe
-
-### End Page - Wireframe
+![Gamepage-Wireframe](/assets/images/readme_images/wireframes/memorygame_wireframe1.png)
 
 ## Surface
 
 ### Colours
 
 The main colours used in this project are: 
+
 
 ### Fonts
 
