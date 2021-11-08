@@ -50,9 +50,12 @@ h3 {
 
 /* --------- score area and countdown*/
 .score-area {
+    margin: 20px;
+    background: azure;
     padding: 20px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 
 /* --------- Game area */
 .game-container {

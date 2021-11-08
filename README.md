@@ -41,6 +41,13 @@ The goal of the website is to present an online memory game which is fun for the
 6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
 7.	A congratulations modal should appear when the player wins while showing a button to play again. 
 
+### How to play
+Once the game has loaded, you have 50 seconds to find all the matching picture cards. 
+
+Click on a picture card to turn it over and reveal an image of something that pollutes our oceans. If you can find its pair, you have found a match! Once you find a match, it will stay face up and your matched cards score will go up by 1. If you have not chosen two identical cards, they will automatically turn back around. 
+
+To win the game you must find all the matches before the time runs out. The ocean and its wildlife are counting on you! 
+
 ## User goals
 To play an online memory game and have fun whilst playing. 
 
