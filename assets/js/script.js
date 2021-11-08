@@ -1,8 +1,8 @@
 //Wait for the DOM to finish loading before running game 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', gameReady());
+	document.addEventListener('DOMContentLoaded', gameReady());
 } else {
-    gameReady();
+	gameReady();
 }
 
 const tiles = document.querySelectorAll('.game-tile');
@@ -11,9 +11,9 @@ let hasTurnedTileOver = false;
 let firstTile, secondTile;
 
 function gameReady() {
-    //document.getElementById("countdown").innerHTML = "50";
-    //pop up start modal 
-    //start music
+	//document.getElementById("countdown").innerHTML = "50";
+	//pop up start modal 
+	//start music
 
 }
 
@@ -29,23 +29,22 @@ function gameReady() {
 //Assistance with this code from here: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
-	
-    lockBoard = false;
 
-    var timeleft = 49;
-    var countdownTimer = setInterval(function () {
-        //Timer run out - game over message
-        if (timeleft <= 0) {
-            clearInterval(countdownTimer);
-            document.getElementById("countdown").innerHTML = "GAME OVER";
-        //clearInterval(countdownTimer);
-        //document.getElementById("countdown").innerHTML = "WINNER";
-        } 
-        else { // timer continues until zero
-            document.getElementById("countdown").innerHTML = timeleft;
-        }
-        timeleft -= 1;
-    }, 1000);
+	lockBoard = false;
+
+	var timeleft = 49;
+	var countdownTimer = setInterval(function () {
+		//Timer run out - game over message
+		if (timeleft <= 0) {
+			clearInterval(countdownTimer);
+			document.getElementById("countdown").innerHTML = "GAME OVER";
+			//clearInterval(countdownTimer);
+			//document.getElementById("countdown").innerHTML = "WINNER";
+		} else { // timer continues until zero
+			document.getElementById("countdown").innerHTML = timeleft;
+		}
+		timeleft -= 1;
+	}, 1000);
 
 }
 
@@ -56,69 +55,69 @@ function startGame() {
 
 // Fisher-Yates (aka Knuth) Shuffle
 //function shuffle(tiles) {
- //   var currentIndex = tiles.length,
- //       temporaryValue, randomIndex;
+//   var currentIndex = tiles.length,
+//       temporaryValue, randomIndex;
 
-  //  while (currentIndex !== 0) {
-  //      randomIndex = Math.floor(Math.random() * currentIndex);
-  //      currentIndex -= 1;
-  //      temporaryValue = tiles[currentIndex];
-  //      tiles[currentIndex] = tiles[randomIndex];
-  //      tiles[randomIndex] = temporaryValue;
- //   }
- //   return tiles;
+//  while (currentIndex !== 0) {
+//      randomIndex = Math.floor(Math.random() * currentIndex);
+//      currentIndex -= 1;
+//      temporaryValue = tiles[currentIndex];
+//      tiles[currentIndex] = tiles[randomIndex];
+//      tiles[randomIndex] = temporaryValue;
+//   }
+//   return tiles;
 //}
 
 function turnTileOver() {
-    if (lockBoard) return;
-    this.classList.add('turnTileOver');
+	if (lockBoard) return;
+	this.classList.add('turnTileOver');
 
-    if (!hasTurnedTileOver) {
-        //first click
-        hasTurnedTileOver = true;
-        firstTile = this;
-    } else {
-        //second click
-        hasTurnedTileOver = false;
-        secondTile = this;
+	if (!hasTurnedTileOver) {
+		//first click
+		hasTurnedTileOver = true;
+		firstTile = this;
+	} else {
+		//second click
+		hasTurnedTileOver = false;
+		secondTile = this;
 
-        checkForMatch()
-    }
+		checkForMatch()
+	}
 }
 
 //Check that tiles are a match
 function checkForMatch() {
-    if (firstTile.dataset.image === secondTile.dataset.image) {
-        //if tiles are a match
-        disableTiles();
-        incrementScore();
-    } else {
-        //if tiles are NOT a match
-        unturnTiles();
-    }
+	if (firstTile.dataset.image === secondTile.dataset.image) {
+		//if tiles are a match
+		disableTiles();
+		incrementScore();
+	} else {
+		//if tiles are NOT a match
+		unturnTiles();
+	}
 }
 
 //if tiles are a match
 function disableTiles() {
-    firstTile.removeEventListener('click', turnTileOver);
-    secondTile.removeEventListener('click', turnTileOver);
+	firstTile.removeEventListener('click', turnTileOver);
+	secondTile.removeEventListener('click', turnTileOver);
 }
 
 //if tiles are NOT a match
 function unturnTiles() {
-    lockBoard = true;
+	lockBoard = true;
 
-    setTimeout(() => {
-        firstTile.classList.remove('turnTileOver');
-        secondTile.classList.remove('turnTileOver');
-        lockBoard = false;
-    }, 600);
+	setTimeout(() => {
+		firstTile.classList.remove('turnTileOver');
+		secondTile.classList.remove('turnTileOver');
+		lockBoard = false;
+	}, 600);
 }
 
 //Add to the score if tiles match
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("match-count").innerText);
-    document.getElementById("match-count").innerText = ++oldScore;
+	let oldScore = parseInt(document.getElementById("match-count").innerText);
+	document.getElementById("match-count").innerText = ++oldScore;
 }
 
 
@@ -128,21 +127,21 @@ function resetBoard() {
 
 //Welcome page
 //Allowing player to customise the game and add their name.
-function playerName(){
-    var obj = document.getElementById("player-name-entry");
-    var str = "Hello "+obj.value+",";
-    var obj2 = document.getElementById("player-name");
-    obj2.innerHTML=str;
+function playerName() {
+	var obj = document.getElementById("player-name-entry");
+	var str = "Hello " + obj.value + ",";
+	var obj2 = document.getElementById("player-name");
+	obj2.innerHTML = str;
 }
 
 //Removing name box and button when player name added.
 function hidePlayernamebox() {
-    var getName = $("#player-name-entry-button");
-    getName.hide()
-    $("#player-name-entry").hide()
-    $("#introduction").hide()
-    $("#welcome-message").show()
-  }
+	var getName = $("#player-name-entry-button");
+	getName.hide()
+	$("#player-name-entry").hide()
+	$("#introduction").hide()
+	$("#welcome-message").show()
+}
 
 
 //Actions on game start
@@ -153,11 +152,52 @@ function startCountdown() {
 // Assistance from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
 (function shuffle() {
 	tiles.forEach(tile => {
-	  let randomPos = Math.floor(Math.random() * 16);
-	  tile.style.order = randomPos;
+		let randomPos = Math.floor(Math.random() * 16);
+		tile.style.order = randomPos;
 	});
-  })();
+})();
 
 tiles.forEach(tiles => {
-    tiles.addEventListener('click', turnTileOver);
+	tiles.addEventListener('click', turnTileOver);
 });
+
+//pop bubbles
+document.getElementById("bubble1").addEventListener("mouseover", popBubble1);
+document.getElementById("bubble2").addEventListener("mouseover", popBubble2);
+document.getElementById("bubble3").addEventListener("mouseover", popBubble3);
+document.getElementById("bubble4").addEventListener("mouseover", popBubble4);
+document.getElementById("bubble5").addEventListener("mouseover", popBubble5);
+document.getElementById("bubble6").addEventListener("mouseover", popBubble6);
+
+function popBubble1() {
+	document.getElementById("bubble1").remove();
+}
+
+function popBubble2() {
+	document.getElementById("bubble2").remove();
+}
+
+function popBubble3() {
+	document.getElementById("bubble3").remove();
+}
+
+function popBubble4() {
+	document.getElementById("bubble4").remove();
+}
+
+function popBubble5() {
+	document.getElementById("bubble5").remove();
+}
+
+function popBubble6() {
+	document.getElementById("bubble6").remove();
+}
+
+
+//$("#bubbles").mouseOver(function(){
+//	$("bubble1").hide();
+//  });
+
+//$("#showbubbles").click(function(){
+//	$("bubbles").show();
+//  });
