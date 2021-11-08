@@ -70,6 +70,7 @@ p {
     border: solid;
     font-size: small;
     vertical-align: middle;
+    margin: 5px;
 }
 
 .start-button {
