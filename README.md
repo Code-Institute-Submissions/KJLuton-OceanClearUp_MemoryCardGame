@@ -181,15 +181,26 @@ glass bottle: https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy
 dead fish: https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/ 
 pollution background: <a href="https://www.freepik.com/vectors/water">Water vector created by brgfx - www.freepik.com</a>
 
-
+bubble: https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html 
+https://www.wallpapertip.com/wpic/mTwwx_under-sea-wallpaper-free-under-the-sea-background/ 
 
   
 #### README.md File Assistance
 
 #### Code:
 
+background cover: https://css-tricks.com/perfect-full-page-background-image/
+bubble: https://stackoverflow.com/questions/16797187/css-animation-moving-an-image-up-the-screen-with-keyframes 
+https://www.youtube.com/watch?v=28VfzEiJgy4 
+https://www.youtube.com/watch?v=3uuQ3g92oPQ 
+https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-what-is-the-memory-game 
+https://www.w3schools.com/jsref/event_onmouseover.asp
+https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
+https://stackoverflow.com/questions/38395374/javascript-when-a-button-is-clicked-the-css-property-toggle-after-second-click [LOOK AT STILL]
 
 # Acknowledgements
+
+
 
 [Back to Table of contents](#table-of-contents)
 
