@@ -180,7 +180,7 @@ p {
     z-index: 1;
 }
 
-/* --------- How to play modal */
+/* --------- Modals */
 .modal-content {
     background-color: #004085;
 }
@@ -191,6 +191,11 @@ p {
 
 .close {
     color: #e9f4ff
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
 }
 
 /* --------- score area and countdown*/

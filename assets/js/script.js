@@ -9,64 +9,45 @@ const tiles = document.querySelectorAll('.game-tile');
 let lockBoard = true;
 let hasTurnedTileOver = false;
 let firstTile, secondTile;
+let score = 0;
 
 function gameReady() {
-	//document.getElementById("countdown").innerHTML = "50";
 	//pop up start modal 
 	//start music
 
 }
 
-//const grid = document.querySelector(".grid");
 
-//	var shuffledTiles = shuffle(tiles);
-//   for (var i= 0; i < shuffledTiles.length; i++){
-//      [].forEach.call(shuffledTiles, function(item){
-////		grid.appendChild(item);
-//      });
-//   }
 
-//Assistance with this code from here: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
-
 	lockBoard = false;
+	countdownTimer()
+	score = 0;
+	//var matchesFound = document.getElementById("match-count").innerText;
+}
 
+function resetGame() {
+	clearInterval(countdownTimer)
+}
+
+// Game Countdown timer
+//Assistance with this code from here: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
+function countdownTimer() {
 	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
-		//Timer run out - game over message
-		if (timeleft <= 0) {
+		if (score === 1) {
+			congratulationsModal();
+		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
 			document.getElementById("countdown").innerHTML = "GAME OVER";
-			//clearInterval(countdownTimer);
-			//document.getElementById("countdown").innerHTML = "WINNER";
 		} else { // timer continues until zero
 			document.getElementById("countdown").innerHTML = timeleft;
 		}
 		timeleft -= 1;
 	}, 1000);
-
 }
 
-//on game win - remove green background and tiles. Show winner message.
-//$("div.game-container").click(function () {
-//  $("game-container").fadeTo(1000, 1);
-//});
-
-// Fisher-Yates (aka Knuth) Shuffle
-//function shuffle(tiles) {
-//   var currentIndex = tiles.length,
-//       temporaryValue, randomIndex;
-
-//  while (currentIndex !== 0) {
-//      randomIndex = Math.floor(Math.random() * currentIndex);
-//      currentIndex -= 1;
-//      temporaryValue = tiles[currentIndex];
-//      tiles[currentIndex] = tiles[randomIndex];
-//      tiles[randomIndex] = temporaryValue;
-//   }
-//   return tiles;
-//}
 
 function turnTileOver() {
 	if (lockBoard) return;
@@ -115,11 +96,16 @@ function unturnTiles() {
 }
 
 //Add to the score if tiles match
+
 function incrementScore() {
-	let oldScore = parseInt(document.getElementById("match-count").innerText);
-	document.getElementById("match-count").innerText = ++oldScore;
+	score++;
+	document.getElementById("match-count").innerText = score;
 }
 
+
+function congratulationsModal(){
+	$("#game-winner").modal('show');
+}
 
 function resetBoard() {
 
@@ -201,3 +187,9 @@ function popBubble6() {
 //$("#showbubbles").click(function(){
 //	$("bubbles").show();
 //  });
+
+
+//on game win - remove green background and tiles. Show winner message.
+//$("div.game-container").click(function () {
+//  $("game-container").fadeTo(1000, 1);
+//});

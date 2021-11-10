@@ -140,7 +140,7 @@ User 3:
 - If the same tile is clicked twice then it registers as a match. 
 - Working out how to stop timer - when number of matches === (tiles.length/2), stop timer. Doesn't recognise "score" as "8" so it is always falsy. 
 
-
+Matched score wasn't recognised from it's span id value as 8. Therefore I added score = 0 as a global value and changed the increment score from that value. 
 
 Tiles weren't disabling: 
 //if tiles are a match
