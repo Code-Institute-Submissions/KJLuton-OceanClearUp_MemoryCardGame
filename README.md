@@ -197,7 +197,16 @@ Due to using the Bootsrap plugin, I used the direct code tool to validate my CSS
 ![HTMLValidation](assets/images/readme_images/html_checker_approved.png)
 
 ## JShint Validation
-     
+
+There are 23 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 8 statements in it, while the median is 2.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+16 warnings due to Jquery coding.      
 
 ### Issues Found During Game Development
 
