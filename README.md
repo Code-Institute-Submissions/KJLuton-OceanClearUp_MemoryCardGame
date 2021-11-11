@@ -223,14 +223,14 @@ The project was deployed to GitHub Pages. Gitpod was used as the development wor
 
 To deploy the project I had to:
 
-* Log in to GitHub and click on repository to deploy ()
+* Log in to GitHub and click on repository to deploy (https://kjluton.github.io/OceanClearUp_MemoryCardGame)
 * Select 'Settings' and find the ‘Pages’ section at the bottom of the vertical menu, on the left hand side.
 * From 'source', click where it says 'none' and update to 'branch: Master'. 
 * Click 'save' and refresh your page to confirm deployment. <br>
 
 
 To run locally: 
-* Log into GitHub and click on the repository to download ()
+* Log into GitHub and click on the repository to download (https://kjluton.github.io/OceanClearUp_MemoryCardGame)
 * Select 'code' and click 'Download" on the Zip File. 
 * Once you download the file, you can extract it and use it in your local environment. 
 
