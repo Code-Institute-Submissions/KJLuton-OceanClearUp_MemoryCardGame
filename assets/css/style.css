@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: 4vh;
+    font-size: 5vh;
     font-family: 'Gluten', cursive;
 }
 
@@ -36,18 +36,21 @@ h3 {
     color: rgb(204, 85, 204);
 }
 
+h4 {
+    font-size: 3vh;
+    font-family: 'Gluten', cursive;
+    color: #f0f8ff;
+    font-weight: 200;
+}
+
 p {
     font-family: 'Dongle', sans-serif;
+    color: #f0f8ff;
     font-size: 3vh;
 }
 
 .how-to-play {
     font-size: 2vh;
-}
-
-.score {
-    font-size: 3vh;
-    color: #004085;
 }
 
 .countdown {
@@ -63,7 +66,7 @@ p {
 .button {
     width: 200px;
     height: 50px;
-    background-color: darkmagenta;
+    background-color: #8b008b;
     color: snow;
     border: solid;
     padding: 10px;
@@ -72,7 +75,7 @@ p {
 .button-sm {
     width: 150px;
     height: 30px;
-    background-color: darkmagenta;
+    background-color: #8b008b;
     color: snow;
     border: solid;
     font-size: small;
@@ -176,7 +179,7 @@ p {
 
 .welcome-container {
     text-align: center;
-    background-color: #20b2ab;
+    background-color: rgb(0 123 255 / 50%);
     padding: 50px;
     width: 100%;
     z-index: 1;
@@ -207,7 +210,7 @@ p {
 /* --------- score area and countdown*/
 .score-area {
     margin: 20px;
-    background: azure;
+    background: #004085;
     padding: 20px;
     justify-content: space-between;
 }

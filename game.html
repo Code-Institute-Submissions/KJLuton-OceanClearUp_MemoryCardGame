@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ocean Clean Up - Memory Game!</title>
+    <title>Ocean Clean Up - Memory Card Game</title>
 </head>
 
 <body>
@@ -22,14 +22,21 @@
         <div class="welcome-container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading">Ocean Clean Up - Memory Game!</h1>
-                    <h3 class="welcome-message">
-                        <p id="player-name"></p>Can you remember where the
-                        rubbish is and clean up the ocean?
-                    </h3>
+                    <h1 class="heading">Ocean Clean Up</h1>
+                    <h2>Memory Card Game</h2>
+
+                    <p>
+                        <span id="player-name"></span>Can you remember where the
+                        rubbish is and clean up the ocean before the time runs out?
+                        <br>
+                        Dive down and click the 'START GAME'
+                        button to start the countdown timer and unlock the game board
+                    </p>
                     <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
                     <div class="option-buttons">
-                        <button class="button-sm center button-curser" onclick="resetGame()">Reset Game</button>
+                        <button type="button" onclick="window.location.href='../game.html'" class="button-sm" data-toggle="modal">
+                            Restart
+                        </button>
                         <button class="button-sm center button-curser" onclick="window.location.href='/index.html'">New
                             Player</button>
                         <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
@@ -54,15 +61,15 @@
                                             pollutes our oceans.
                                             <br>
                                             <br>
-                                            If you can find its pair, you have found a match! Once you find a match, it
-                                            will stay face up and your matched cards score will go up by 1. If you have
-                                            not chosen two
-                                            identical cards, they will automatically turn back around.
+                                            If you can find its pair, you have found a match! When you find a match,
+                                            both cards
+                                            will stay faced up and your 'matched cards' score will go up by 1. If you
+                                            have
+                                            not chosen two identical cards, they will automatically turn back around.
                                             <br>
                                             <br>
                                             To win the game you must find all the matches before the time runs out. The
-                                            ocean
-                                            and its wildlife are counting on you!</p>
+                                            ocean and its wildlife are counting on you!</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -83,18 +90,20 @@
                                     </div>
                                     <div class="modal-body">
                                         <p class="how-to-play">You managed to clean all the items polluting the ocean
-                                            before the time ran out! 
+                                            before the time ran out!
                                             <br>
-                                            You had <span id=remainingTime></span>seconds to spare!
+                                            You had <span id=remainingTime></span> seconds to spare!
                                             <br>
-                                            Thank you so much for all your help. If everyone was as helpful as cleaning up the ocean as you then we would have a much
+                                            Thank you so much for all your help. If everyone was as helpful as cleaning
+                                            up the ocean as you then we would have a much
                                             happier planet! <br>
-                                            Please continue your good work. To play again and keep practising cleaning
-                                            up the ocean, click play again below.</p>
+                                            Click the button below to play again!</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal" onclick="resetGame()">Close</button>
+                                        <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
+                                            onclick="window.location.href='../game.html'">Play Again</button>
+                                            <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
+                                            onclick="window.location.href='../index.html'">New Player</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,8 +118,8 @@
     <div class="container">
         <div class="row score-area">
             <div class="col">
-                <p class="score matches">Matches Found: <span id="match-count">0</span></p>
-                <p class="score countdown">Time left: <span id="countdown">50</span></p>
+                <h4 class="matches">Matches Found: <span id="match-count">0</span></h4>
+                <h4 class="countdown">Time left: <span id="countdown">50</span></h4>
             </div>
         </div>
     </div>

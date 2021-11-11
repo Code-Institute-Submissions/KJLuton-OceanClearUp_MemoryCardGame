@@ -31,14 +31,14 @@ Insert description of website here
 # UX
 
 ## Game goals
-The goal of the website is to present an online memory game which is fun for the user to play. The memory game is designed around the theme of the enviroment and cleaning up the ocean. Therefore it is also an informative game too. 
+The goal of the website is to present an online memory game which is fun for the user to play. The game also intends to educate the player into the effects of the ocean on teh enviroment.
 
 ### How to play
-Once the game has loaded, you have 50 seconds to find all the matching picture cards. 
+Once the game has loaded, the player has 50 seconds to find all the matching picture cards. 
 
-Click on a picture card to turn it over and reveal an image of something that pollutes our oceans. If you can find its pair, you have found a match! Once you find a match, it will stay face up and your matched cards score will go up by 1. If you have not chosen two identical cards, they will automatically turn back around. 
+The player must click on a turned over picture card to reveal the picture on the other side. The pictures on the front face will be of items that pollute the oceans. If the player can find its matching picture card, they will have found a match. when they find a match, the card stay faced up and the 'matched cards' score will go up by 1. If they have not chosen two identical cards, the cards will automatically turn back around. 
 
-To win the game you must find all the matches before the time runs out. The ocean and its wildlife are counting on you! 
+To win the game the player must find all the matches before the time runs out.
 
 ## User goals
 To play an online memory game and have fun whilst playing. 
@@ -46,17 +46,16 @@ To play an online memory game and have fun whilst playing.
 ## User stories
 
 User 1: 
-12 year old learning about the ocean and effects of single use plastic. Wants to learn 
+8 year old wanting to play a fun game online. Has a lot of time to play the game. Plays a lot of games on her ipad. Wants to be able to play games when she is in the back of the car going to school. 
 
 User 2:
-18 year old looking to play games on the internet. 
+30 year old, male, georgraphy teacher looking for online educational games to share with his class to play at home. 
 
-User 3:
+User 3: 
+12 year old boy learning about the ocean and effects of single use plastics. Gets bored in school easily and is looking for a fun way to learn about the enviroment. 
 
 
 ## Wireframes
-
-### Homepage - Wireframe
 
 ### Game Page - Wireframe
 ![Gamepage-Wireframe](/assets/images/readme_images/wireframes/memorygame_wireframe1.png)
@@ -65,13 +64,19 @@ User 3:
 
 ### Colours
 
-The main colours used in this project are: 
+The main colours used in this project were blues, greens and other colours associated with the ocean. The main colour codes are: 
 
+Light text: #f0f8ff 
+Start Button background: #004085
+Small buttons: #8b008b 
+Polluted areas: #044e156b
 
 ### Fonts
 
-The fonts are installed from [Google Fonts](https://fonts.google.com/):
-https://fonts.google.com/specimen/Gluten#standard-styles 
+The fonts are installed from [Google Fonts](https://fonts.google.com/)
+
+Main headers and buttons: https://fonts.google.com/specimen/Gluten#standard-styles 
+Paragraph and small readble text: https://fonts.google.com/specimen/Dongle
 
 ### Images
 
@@ -82,28 +87,31 @@ https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.h
 _______
 # Features and Functions
 
-The website consists of 2 pages. 
+The website game consists of 2 pages. 
 1) A welcome page 
 2) A game page 
 
 The welcome page has the following features: 
 
-1. Welcome the user to the game. 
-2. Offer a customisable aspect to the game by asking the player their name. 
+1. Welcomes the user to the game. 
+2. Offers a customisable aspect to the game by asking the player their name. 
 
-The gamepage has the following features: 
+The gamepage has the following features and functions: 
 
 1.	Shuffle picture tiles on game start or restart. 
 2.	Game should know how to handle matched and unmatched pictures.
 3.	Game should display the current number of matches the player has found. 
 4.	The game should show a countdown timer when the player presses ‘start game’.
-5.	When the player wins the game, the timer stops.
+5.	When the player wins the game, the timer stops and a congratulations message shows with time left score.
 6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
 7.	A congratulations modal should appear when the player wins while showing a button to play again. 
 
 ## Future implementations
 
-when cards are matched, make them disappear as though the game player is cleaning the ocean. 
+- when cards are matched, make them disappear instantly as though the game player is cleaning the ocean. 
+- Add different levels of skill to appeal for older audiences and player growth. easy, medium, hard. This could be by either reducing the amount of time the player has to clean the board or by increasing the amount of squares/matches to be found on the board. 
+- Adding music to the game to give it more atmostphere. Background music of bubbles and under water sounds. Then, add additional sounds when the player gets a correct match or incorrect match. 
+- Adding additional ediucational elements to the page so the player can learn more about how they can help the enviroment, do their part to clean the oceans and reduce water pollution. 
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -112,6 +120,38 @@ _______
 
 ## Languages Used
 
+* #### [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    HTML was used to build the website structure and overall layout. 
+
+* #### [CSS3](https://en.wikipedia.org/wiki/CSS)
+    CSS was used to style the website and build on the Bootstrap framework to customise the website to the owners brand. 
+
+## Frameworks, Libraries and Programmes Used
+
+* #### [Bootstrap](https://getbootstrap.com/)
+    Bootstrap 5.0 was used to assist with a responsive design and basic structure of the website.  
+
+* #### [JQuery](https://jquery.com/)
+    JQuery was used with Bootstrap and aided the responsive and interactive elements of the site. 
+
+* #### [Font Awesome](https://fontawesome.com/)
+    Font Awesome was used to supply icons for the social links and 'Club Facilities' section. 
+
+* #### [Google Fonts](https://fonts.google.com/) 
+    Google Fonts were used to install the 'Bebas Neue' and 'Signika Negative' fonts which were used across the site. 
+
+* #### [GitHub](https://github.com/)
+    GitHub is used to store the project code. The code is pushed from GitPod to the GitHub respository. 
+
+* #### [GitPod](https://www.gitpod.io/)
+    Gitpod was used to write the code and the Git terminal was used for version control. The code was committed to Git and pushed to GitHub via the terminal. 
+
+* #### [Balsamic](https://balsamiq.com/) 
+    The Balsamic programme was used to build and develop the projects [Wireframes](#wireframes). 
+
+* #### [Adobe Photoshop](https://www.photoshop.com/en) 
+    Adobe Photoshop was used to create the logo, edit images and resize images for the website. 
+
 [Back to table of contents](#table-of-contents)
 _______
 
@@ -119,42 +159,46 @@ _______
 
 ### Functionality Testing
 
-images not clear enough 
+Throughout the process I continuously tested the gane functionality and page layouts by using the chrome inspect and development tools. 
 
 ### User Stories Testing
 
-User 1:
+User 1: 
+Testing as user 1 showed that the game would be suitable for this user. Further development may need to happen to ensure wording is clear for a child of 8. Additional images would be useful to keep younger children engaged. Game works on a tablet screen to this user can play the game on the move. 
 
 User 2:
+User 2 found this game simple and easy to use. The game is easily shared with the children and he is happy with the content that is provided. Would like to see further educational sources on teh game site so the children can continue to learn. Would also like to see different ability levels to ensure all children in the class are tested according to their ability.
 
-User 3:
+User 3: 
+The game works well for user 3. It's a fun engaging game that is also educational. Would like to see extra difficulty levels so they don't get bored.
 
 ### Code Validation
 
 ### Issues Found During Game Development
 
-- getting squares to sit nicely on a grid and have one card overlay the other
-- disable cards timeout
-- bug: if flip tiles fast it thinks two incorrect tiles are the same and overites script. 
-- setting up hover element - treating all the game-tiles as a joint element instead of indidivudal tiles.
-- If the same tile is clicked twice then it registers as a match. 
-- Working out how to stop timer - when number of matches === (tiles.length/2), stop timer. Doesn't recognise "score" as "8" so it is always falsy. 
-
-Matched score wasn't recognised from it's span id value as 8. Therefore I added score = 0 as a global value and changed the increment score from that value. 
-
-Tiles weren't disabling: 
-//if tiles are a match
-function disableTiles() {
-    firstTile.removeeventListener('click', turnTileOver);
-    secondTile.removeeventListener('click', turnTileOver);
-}
-
-Due to small case e being used 
+- Getting tiels squares to sit nicely on a grid and have one card overlay the other. Changed the position to 
+- If tiles were flipped too fast it thought two incorrect tiles are the same and overites script. 
+- Setting up hover element in javascript meant that all tiles were hilighted when 'mouseon'. Decided to create this effect with css hover function following advice from mentor.
+- Working out how to stop timer - when number of matches === (tiles.length/2), stop timer. Doesn't recognise "score" as "8" so it is always false. Created a variable of 'score' which could be === 8 instead of trying to read the text value of the span. 
 
 [Back to table of contents](#table-of-contents)
 _______
 # Deployment
 
+The project was deployed to GitHub Pages. Gitpod was used as the development workspace. I committed and logged all changes to the project, using the git command control system. At the end of each session, I used the git push command in the GitPod terminal to push all changes to the GitHub repository. 
+
+To deploy the project I had to:
+
+* Log in to GitHub and click on repository to deploy ()
+* Select 'Settings' and find the ‘Pages’ section at the bottom of the vertical menu, on the left hand side.
+* From 'source', click where it says 'none' and update to 'branch: Master'. 
+* Click 'save' and refresh your page to confirm deployment. <br>
+
+
+To run locally: 
+* Log into GitHub and click on the repository to download ()
+* Select 'code' and click 'Download" on the Zip File. 
+* Once you download the file, you can extract it and use it in your local environment. 
 
 [Back to table of contents](#table-of-contents)
 _______

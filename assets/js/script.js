@@ -12,8 +12,7 @@ let firstTile, secondTile;
 let score = 0;
 
 function gameReady() {
-	//pop up start modal 
-	//start music
+	
 }
 
 
@@ -22,15 +21,6 @@ function startGame() {
 	lockBoard = false;
 	countdownTimer()
 	score = 0;
-	//var matchesFound = document.getElementById("match-count").innerText;
-}
-
-function resetGame() {
-	score = 0;
-	document.getElementById("match-count").innerHTML = 0;
-	document.getElementById("countdown").innerHTML = 50;
-	clearInterval(countdownTimer);
-
 }
 
 // Game Countdown timer
@@ -38,7 +28,7 @@ function resetGame() {
 function countdownTimer() {
 	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
-		if (score === 1) {
+		if (score === 8) {
 			congratulationsModal();
 		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
@@ -50,7 +40,7 @@ function countdownTimer() {
 	}, 1000);
 }
 
-
+//Allow tiles to be turned over in game play 
 function turnTileOver() {
 	if (lockBoard) return;
 	this.classList.add('turnTileOver');
@@ -98,7 +88,6 @@ function unturnTiles() {
 }
 
 //Add to the score if tiles match
-
 function incrementScore() {
 	score++;
 	document.getElementById("match-count").innerText = score;
@@ -112,10 +101,6 @@ function congratulationsModal(){
 	//showing total time 
 	finalTime = document.getElementById("countdown").innerText
 	document.getElementById("remainingTime").innerHTML = finalTime
-}
-
-function resetBoard() {
-//reset screen on modal click 
 }
 
 //Welcome page
@@ -137,12 +122,6 @@ function hidePlayernamebox() {
 	$("#welcome-message").show()
 }
 
-
-//Actions on game start
-function startCountdown() {
-
-}
-
 // Assistance from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
 (function shuffle() {
 	tiles.forEach(tile => {
@@ -154,6 +133,7 @@ function startCountdown() {
 tiles.forEach(tiles => {
 	tiles.addEventListener('click', turnTileOver);
 });
+
 
 
 //pop bubbles individually
@@ -187,9 +167,3 @@ function popBubble5() {
 function popBubble6() {
 	$("#bubble6").addClass("hide");
 }
-
-
-//on game win - remove green background and tiles. Show winner message.
-//$("div.game-container").click(function () {
-//  $("game-container").fadeTo(1000, 1);
-//});
