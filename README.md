@@ -5,7 +5,7 @@ Insert mock up here
 
 Insert description of website here
 
-## [View live website in GitHub pages](https://github.com/KJLuton/Milestoneproject2/)
+## [View live website in GitHub pages](https://kjluton.github.io/OceanClearUp_MemoryCardGame/)
 ---
 
 # Table of Contents
@@ -241,18 +241,18 @@ The content for the game was written by myself and facts were taken from: https:
 #### Images: 
 
 The images of the tiles were created by myself in Adobe Photoshop. I used the following assets to create these images:
-- Bin bag: https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#
-- Fishing net: https://www.subpng.com/png-4wsq1u/ 
-- Plastic bottle: http://clipart-library.com/clipart/422887.htm
-- Oil barrel: https://www.vectorstock.com/royalty-free-vector/metal-barrel-with-oil-icon-cartoon-style-vector-12048361 
-- Food carton: https://www.pikpng.com/downpngs/owwoJo_1528906718-clipart-of-orange-juice-clip-art-orange/ 
-- Plastic straws: https://www.pngitem.com/download/xwJwob_transparent-plastic-cup-clipart-transparent-background-straw-clipart/
-- Cigarette end: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Pixabay</a> 
-- Glass bottle: https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy-drinks-diet-coke-clip-art-color-in-coke-bottle/
-- Dead Fish: https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/ 
+- [Bin Bag](https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#)
+- [Fishing net](https://www.subpng.com/png-4wsq1u/)
+- [Plastic bottle](http://clipart-library.com/clipart/422887.html)
+- [Oil barrel](https://www.vectorstock.com/royalty-free-vector/metal-barrel-with-oil-icon-cartoon-style-vector-12048361)
+- [Food carton](https://www.pikpng.com/downpngs/owwoJo_1528906718-clipart-of-orange-juice-clip-art-orange/) 
+- [Plastic straws](https://www.pngitem.com/download/xwJwob_transparent-plastic-cup-clipart-transparent-background-straw-clipart/)
+- [Cigarette end](https://pixabay.com/users/clker-free-vector-images-3736/)
+- [Glass bottle](https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy-drinks-diet-coke-clip-art-color-in-coke-bottle/)
+- [Dead Fish](https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/)
 
-The bubble image is from: https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html 
-the main background is from: https://www.wallpapertip.com/wpic/mTwwx_under-sea-wallpaper-free-under-the-sea-background/ 
+[Bubble image is from here](https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html)
+[Main background is from here](https://www.wallpapertip.com/wpic/mTwwx_under-sea-wallpaper-free-under-the-sea-background/)
   
 #### README.md File Assistance
 
