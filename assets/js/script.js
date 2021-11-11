@@ -15,7 +15,6 @@ function gameReady() {
 	
 }
 
-
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
 	lockBoard = false;
@@ -99,8 +98,8 @@ function congratulationsModal(){
 	$("#game-winner").modal('show');
 	
 	//showing total time 
-	finalTime = document.getElementById("countdown").innerText
-	document.getElementById("remainingTime").innerHTML = finalTime
+	finalTime = document.getElementById("countdown").innerText;
+	document.getElementById("remainingTime").innerHTML = finalTime;
 }
 
 //Welcome page
@@ -115,11 +114,11 @@ function playerName() {
 //Removing name box and button when player name added.
 function hidePlayernamebox() {
 	var getName = $("#player-name-entry-button");
-	getName.hide()
-	$("#player-name-entry").hide()
-	$("#introduction").hide()
-	$("#p-introduction").hide()
-	$("#welcome-message").show()
+	getName.hide();
+	$("#player-name-entry").hide();
+	$("#introduction").hide();
+	$("#p-introduction").hide();
+	$("#welcome-message").show();
 }
 
 // Assistance from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
@@ -149,7 +148,7 @@ function popBubble1() {
 }
 
 function popBubble2() {
-	$("#bubble2").addClass("hide");;
+	$("#bubble2").addClass("hide");
 }
 
 function popBubble3() {
