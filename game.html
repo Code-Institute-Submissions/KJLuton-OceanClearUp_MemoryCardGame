@@ -23,7 +23,8 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="heading">Ocean Clean Up - Memory Game!</h1>
-                    <h3 class="welcome-message"><p id="player-name"></p>Can you remember where the
+                    <h3 class="welcome-message">
+                        <p id="player-name"></p>Can you remember where the
                         rubbish is and clean up the ocean?
                     </h3>
                     <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
@@ -31,13 +32,8 @@
                         <button class="button-sm center button-curser" onclick="resetGame()">Reset Game</button>
                         <button class="button-sm center button-curser" onclick="window.location.href='/index.html'">New
                             Player</button>
-                        <button type="button" class="button-sm" data-toggle="modal"
-                            data-target="#howtoplay">
+                        <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
                             How to play
-                        </button>
-                        <button type="button" class="button-sm" data-toggle="modal"
-                            data-target="#game-winner">
-                            winner
                         </button>
                         <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog"
                             aria-labelledby="howtoplay-modal" aria-hidden="true">
@@ -86,11 +82,19 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p class="how-to-play">You've won! WOOHOO</p>
+                                        <p class="how-to-play">You managed to clean all the items polluting the ocean
+                                            before the time ran out! 
+                                            <br>
+                                            You had <span id=remainingTime></span>seconds to spare!
+                                            <br>
+                                            Thank you so much for all your help. If everyone was as helpful as cleaning up the ocean as you then we would have a much
+                                            happier planet! <br>
+                                            Please continue your good work. To play again and keep practising cleaning
+                                            up the ocean, click play again below.</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
+                                            data-dismiss="modal" onclick="resetGame()">Close</button>
                                     </div>
                                 </div>
                             </div>

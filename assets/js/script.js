@@ -26,7 +26,11 @@ function startGame() {
 }
 
 function resetGame() {
-	clearInterval(countdownTimer)
+	score = 0;
+	document.getElementById("match-count").innerHTML = 0;
+	document.getElementById("countdown").innerHTML = 50;
+	clearInterval(countdownTimer);
+
 }
 
 // Game Countdown timer
@@ -34,7 +38,7 @@ function resetGame() {
 function countdownTimer() {
 	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
-		if (score === 8) {
+		if (score === 1) {
 			congratulationsModal();
 		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
@@ -101,12 +105,17 @@ function incrementScore() {
 }
 
 
+//congratulations when all tiles match. Show modal and time left.
 function congratulationsModal(){
 	$("#game-winner").modal('show');
+	
+	//showing total time 
+	finalTime = document.getElementById("countdown").innerText
+	document.getElementById("remainingTime").innerHTML = finalTime
 }
 
 function resetBoard() {
-
+//reset screen on modal click 
 }
 
 //Welcome page
