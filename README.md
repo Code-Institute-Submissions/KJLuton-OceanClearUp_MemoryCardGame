@@ -204,50 +204,49 @@ To run locally:
 _______
 # Credits
 
-Show / hide features: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp 
-
 ## Content
 
-https://www.conservation.org/stories/ocean-pollution-11-facts-you-need-to-know
-
+The content for the game was written by myself and facts were taken from: https://www.conservation.org/stories/ocean-pollution-11-facts-you-need-to-know
 
 ## Media
 
 #### Images: 
 
-Bin bag: https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#
-Fishing net: https://www.subpng.com/png-4wsq1u/ 
-plastic bottle: http://clipart-library.com/clipart/422887.htm
-oil barrel: https://www.vectorstock.com/royalty-free-vector/metal-barrel-with-oil-icon-cartoon-style-vector-12048361 
-food carton: https://www.pikpng.com/downpngs/owwoJo_1528906718-clipart-of-orange-juice-clip-art-orange/ 
-plastic straws: https://www.pngitem.com/download/xwJwob_transparent-plastic-cup-clipart-transparent-background-straw-clipart/
-cigarette end: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Pixabay</a> 
-glass bottle: https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy-drinks-diet-coke-clip-art-color-in-coke-bottle/
+The images of the tiles were created by myself in Adobe Photoshop. I used the following assets to create these images:
+- Bin bag: https://imgbin.com/png/BJ4GdYBy/bin-bag-plastic-bag-rubbish-bins-amp-waste-paper-baskets-png#
+- Fishing net: https://www.subpng.com/png-4wsq1u/ 
+- Plastic bottle: http://clipart-library.com/clipart/422887.htm
+- Oil barrel: https://www.vectorstock.com/royalty-free-vector/metal-barrel-with-oil-icon-cartoon-style-vector-12048361 
+- Food carton: https://www.pikpng.com/downpngs/owwoJo_1528906718-clipart-of-orange-juice-clip-art-orange/ 
+- Plastic straws: https://www.pngitem.com/download/xwJwob_transparent-plastic-cup-clipart-transparent-background-straw-clipart/
+- Cigarette end: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=24284">Pixabay</a> 
+- Glass bottle: https://www.clipartmax.com/middle/m2i8b1i8A0b1i8A0_coca-cola-fizzy-drinks-diet-coke-clip-art-color-in-coke-bottle/
+- Dead Fish: https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/ 
 
-
-dead fish: https://www.vhv.rs/viewpic/hiwhwoh_cartoon-fish-bones-clipart-png-download-draw-a/ 
-pollution background: <a href="https://www.freepik.com/vectors/water">Water vector created by brgfx - www.freepik.com</a>
-
-bubble: https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html 
-https://www.wallpapertip.com/wpic/mTwwx_under-sea-wallpaper-free-under-the-sea-background/ 
-
+The bubble image is from: https://www.cleanpng.com/png-hd-hyperreal-bubble-soap-bubbles-388/download-png.html 
+the main background is from: https://www.wallpapertip.com/wpic/mTwwx_under-sea-wallpaper-free-under-the-sea-background/ 
   
 #### README.md File Assistance
 
 #### Code:
 
-background cover: https://css-tricks.com/perfect-full-page-background-image/
-bubble: https://stackoverflow.com/questions/16797187/css-animation-moving-an-image-up-the-screen-with-keyframes 
-https://www.youtube.com/watch?v=28VfzEiJgy4 
-https://www.youtube.com/watch?v=3uuQ3g92oPQ 
-https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-what-is-the-memory-game 
-https://www.w3schools.com/jsref/event_onmouseover.asp
-https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
-https://stackoverflow.com/questions/38395374/javascript-when-a-button-is-clicked-the-css-property-toggle-after-second-click [LOOK AT STILL]
+Durignt he project I used the following courses to assist with code writing and developing my understanding of functions:
+
+- For assistance with "Show" and "Hide" features, I used: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp 
+- To assit with fitting the background to cover the HMTL: https://css-tricks.com/perfect-full-page-background-image/
+- To assist in animating the bubbles: https://stackoverflow.com/questions/16797187/css-animation-moving-an-image-up-the-screen-with-keyframes 
+- The following youtube videos helped me with ideas on how to structure the memory card game: 
+         - https://www.youtube.com/watch?v=28VfzEiJgy4 
+         - https://www.youtube.com/watch?v=3uuQ3g92oPQ 
+- The following site also helped me with a memory card game structure: https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-what-is-the-memory-game 
+- For assistance with 'mouse over' features, I used: https://www.w3schools.com/jsref/event_onmouseover.asp
+- For assistance with the countdown feature, I used: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 
 # Acknowledgements
 
-
+Thank you to my mentor Antonija Šimić for their support and guidance during the project development. 
+<br>
+Thank you to my family and friends, especilly Matej Navara, who tested the site and provided valuable feedback. 
 
 [Back to Table of contents](#table-of-contents)
 
