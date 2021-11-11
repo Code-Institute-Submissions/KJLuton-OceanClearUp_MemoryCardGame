@@ -1,9 +1,6 @@
 # Memory Game
 ## Interactive Frontend Development Milestone Project 2
 
-Insert mock up here 
-
-Insert description of website here
 
 ## [View live website in GitHub pages](https://kjluton.github.io/OceanClearUp_MemoryCardGame/)
 ---
@@ -197,7 +194,7 @@ Due to using the Bootsrap plugin, I used the direct code tool to validate my CSS
 
 ## HTML Validation
 
-
+![HTMLValidation](assets/images/readme_images/html_checker_approved.png)
 
 ## JShint Validation
      
