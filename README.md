@@ -174,6 +174,34 @@ The game works well for user 3. It's a fun engaging game that is also educationa
 
 ### Code Validation
 
+## CSS Validation
+
+Due to using the Bootsrap plugin, I used the direct code tool to validate my CSS. 
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+     
+
+## HTML Validation
+
+
+
+## JShint Validation
+     
+
 ### Issues Found During Game Development
 
 - Getting tiels squares to sit nicely on a grid and have one card overlay the other. Changed the position to 
