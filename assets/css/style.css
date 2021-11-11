@@ -27,11 +27,13 @@ h1 {
 h2 {
     font-size: 3vh;
     font-family: 'Gluten', cursive;
+    
 }
 
 h3 {
-    font-size: 2vh;
+    font-size: 3vh;
     font-family: 'Gluten', cursive;
+    color: rgb(204, 85, 204);
 }
 
 p {
@@ -196,6 +198,10 @@ p {
 .show {
 	visibility: visible !important;
 	opacity: 100 !important;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 /* --------- score area and countdown*/

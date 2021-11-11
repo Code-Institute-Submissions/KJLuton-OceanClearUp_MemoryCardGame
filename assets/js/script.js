@@ -14,9 +14,7 @@ let score = 0;
 function gameReady() {
 	//pop up start modal 
 	//start music
-
 }
-
 
 
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
@@ -36,7 +34,7 @@ function resetGame() {
 function countdownTimer() {
 	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
-		if (score === 1) {
+		if (score === 8) {
 			congratulationsModal();
 		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
@@ -115,7 +113,7 @@ function resetBoard() {
 //Allowing player to customise the game and add their name.
 function playerName() {
 	var obj = document.getElementById("player-name-entry");
-	var str = "Hello " + obj.value + ",";
+	var str = "Hello " + obj.value;
 	var obj2 = document.getElementById("player-name");
 	obj2.innerHTML = str;
 }
@@ -126,6 +124,7 @@ function hidePlayernamebox() {
 	getName.hide()
 	$("#player-name-entry").hide()
 	$("#introduction").hide()
+	$("#p-introduction").hide()
 	$("#welcome-message").show()
 }
 
@@ -147,46 +146,38 @@ tiles.forEach(tiles => {
 	tiles.addEventListener('click', turnTileOver);
 });
 
-//pop bubbles
-document.getElementById("bubble1").addEventListener("mouseover", popBubble1);
-document.getElementById("bubble2").addEventListener("mouseover", popBubble2);
-document.getElementById("bubble3").addEventListener("mouseover", popBubble3);
-document.getElementById("bubble4").addEventListener("mouseover", popBubble4);
-document.getElementById("bubble5").addEventListener("mouseover", popBubble5);
-document.getElementById("bubble6").addEventListener("mouseover", popBubble6);
+
+//pop bubbles individually
+$("#bubble1").mouseover(popBubble1);
+$("#bubble2").mouseover(popBubble2);
+$("#bubble3").mouseover(popBubble3);
+$("#bubble4").mouseover(popBubble4);
+$("#bubble5").mouseover(popBubble5);
+$("#bubble6").mouseover(popBubble6);
 
 function popBubble1() {
-	document.getElementById("bubble1").remove();
+	$("#bubble1").addClass("hide");
 }
 
 function popBubble2() {
-	document.getElementById("bubble2").remove();
+	$("#bubble2").addClass("hide");;
 }
 
 function popBubble3() {
-	document.getElementById("bubble3").remove();
+	$("#bubble3").addClass("hide");
 }
 
 function popBubble4() {
-	document.getElementById("bubble4").remove();
+	$("#bubble4").addClass("hide");
 }
 
 function popBubble5() {
-	document.getElementById("bubble5").remove();
+	$("#bubble5").addClass("hide");
 }
 
 function popBubble6() {
-	document.getElementById("bubble6").remove();
+	$("#bubble6").addClass("hide");
 }
-
-
-//$("#bubbles").mouseOver(function(){
-//	$("bubble1").hide();
-//  });
-
-//$("#showbubbles").click(function(){
-//	$("bubbles").show();
-//  });
 
 
 //on game win - remove green background and tiles. Show winner message.
