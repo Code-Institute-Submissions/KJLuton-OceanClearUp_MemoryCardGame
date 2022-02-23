@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Gluten', cursive;
     color: #f0f8ff;
-    background-image: url('/assets/images/underthesea.jpg');
+    background-image: url(../images/underthesea.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
