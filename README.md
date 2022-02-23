@@ -1,6 +1,10 @@
 # Memory Game
 ## Interactive Frontend Development Milestone Project 2
 
+![Game Frontpage](/assets/images/readme_images/game_welcomepage.png)
+The [Ocean Clean Up - Memory Game](https://kjluton.github.io/OceanClearUp_MemoryCardGame/) was built by Kirstyn Luton as part of the Interactive Frontend Development Milestone Project, Milestone 2 Project with Code Institute. The website presents a memory card game, where users can learn about the effects of rubbish in the ocean through playing the game.
+
+Disclaimer: This website has been built for entertainment and education purposes. The website is build with HTML, CSS and Javascript with imported Bootstrap. The game is responsive for multiple screen types.
 
 ## [View live website in GitHub pages](https://kjluton.github.io/OceanClearUp_MemoryCardGame/)
 ---
