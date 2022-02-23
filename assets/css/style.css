@@ -1,7 +1,6 @@
 /* --------- Global style */
 
 html { 
-    background: url("underthesea.jpg") no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,6 +8,8 @@ html {
   }
 
 body {
+    background: url("underthesea.jpg") no-repeat center fixed;
+    height: 100vh;
     margin: 0;
     font-family: 'Gluten', cursive;
     color: #f0f8ff;
@@ -27,7 +28,6 @@ h1 {
 h2 {
     font-size: 3vh;
     font-family: 'Gluten', cursive;
-    
 }
 
 h3 {
@@ -303,6 +303,7 @@ img {
     padding: 30px;
     position: relative;
     margin-top: 50px;
+    z-index: 10;
 }
 
 /* --------- /. Game Page */
