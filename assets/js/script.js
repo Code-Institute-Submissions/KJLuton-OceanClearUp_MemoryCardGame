@@ -33,6 +33,7 @@ function countdownTimer() {
 			clearInterval(countdownTimer);
 			document.getElementById("countdown").innerHTML = "GAME OVER";
 			lockBoard = true;
+			gameoverModal();
 		} else { // timer continues until zero
 			document.getElementById("countdown").innerHTML = timeleft;
 		}
@@ -103,8 +104,28 @@ function congratulationsModal(){
 	document.getElementById("remainingTime").innerHTML = finalTime;
 }
 
+//game over when the countdowntime runs out. Show modal and time left.
+function gameoverModal(){
+	$("#game-over").modal('show');
+	
+	//showing total time 
+	finalTime = document.getElementById("countdown").innerText;
+	document.getElementById("remainingTime").innerHTML = finalTime;
+}
+
 //Welcome page
 //Allowing player to customise the game and add their name.
+function checkPlayer() {
+	var obj = document.getElementById("player-name-entry");
+	
+	//if player name is left empty alert the user to enter their name and don't continue
+	if (obj.value == "") {
+		alert("Please enter your name")
+	} else {
+		hidePlayernamebox()
+	}
+}
+
 function playerName() {
 	var obj = document.getElementById("player-name-entry");
 	var str = "Hello " + obj.value;
@@ -114,6 +135,7 @@ function playerName() {
 
 //Removing name box and button when player name added.
 function hidePlayernamebox() {
+	playerName()
 	var getName = $("#player-name-entry-button");
 	getName.hide();
 	$("#player-name-entry").hide();
