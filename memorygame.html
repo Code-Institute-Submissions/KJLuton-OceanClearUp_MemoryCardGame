@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -16,6 +16,35 @@
 </head>
 
 <body>
+    <!-- Instructions modal -->
+    <div class="modal fade" id="game-instructions" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Time to clean up the ocean</h5>
+                </div>
+                <div class="modal-body">
+                    <p><span id="player-name"></span>Can you remember where the
+                        rubbish is and clean up the ocean before the time runs out?
+                        Dive down and click the 'START GAME' button to start the countdown timer and unlock the game
+                        board</p>
+                </div>
+                <div class="modal-footer">
+                <div class="option-buttons">
+                    <button class="button center button-curser" data-dismiss="modal"
+                        onclick="startGame()">Start Game</button>
+                    <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
+                        How to play
+                    </button>
+                </div>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./ Instructions modal -->
     <!-- Header -->
     <header>
         <!-- Welcome section -->
@@ -38,51 +67,6 @@
     </header>
     <!-- /.header -->
     <!-- Welcome section -->
-    <!-- Instructions section -->
-    <div class="container">
-        <div class="modal fade" id="game-instructions" tabindex="-1" role="dialog"
-            aria-labelledby="game-instructions-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title center" id="game-instructions-modal">Play game</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <span id="player-name"></span>Can you remember where the
-                            rubbish is and clean up the ocean before the time runs out?
-                            <br>
-                            Dive down and click the 'START GAME'
-                            button to start the countdown timer and unlock the game board
-                        </p>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button class="start-button button center button-curser" onclick="startGame()">Start
-                            Game</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Instructions section
-    <div class="container">
-        <div class="game-instructions">
-            <div class="col-12">
-                <p>
-                    <span id="player-name"></span>Can you remember where the
-                    rubbish is and clean up the ocean before the time runs out?
-                    <br>
-                    Dive down and click the 'START GAME'
-                    button to start the countdown timer and unlock the game board
-                </p>
-                <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
-                <div>
-                 -->
-
     <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog" aria-labelledby="howtoplay-modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
