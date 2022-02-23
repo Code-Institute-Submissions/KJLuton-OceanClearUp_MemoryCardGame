@@ -20,189 +20,196 @@
     <header>
         <!-- Welcome section -->
         <div class="welcome-container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="heading">Ocean Clean Up</h1>
-                    <h2>Memory Card Game</h2>
-
-                    <p>
-                        <span id="player-name"></span>Can you remember where the
-                        rubbish is and clean up the ocean before the time runs out?
-                        <br>
-                        Dive down and click the 'START GAME'
-                        button to start the countdown timer and unlock the game board
-                    </p>
-                    <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
-                    <div class="option-buttons">
-                        <button type="button" onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/memorygame.html'" class="button-sm" data-toggle="modal">
-                            Restart
-                        </button>
-                        <button class="button-sm center button-curser" onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/index.html'">New
-                            Player</button>
-                        <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
-                            How to play
-                        </button>
-                        <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog"
-                            aria-labelledby="howtoplay-modal" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3 class="modal-title center" id="howtoplay-modal">HOW TO PLAY</h3>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="how-to-play">Once the game has loaded, you have 50 seconds to find all
-                                            the matching
-                                            picture cards.
-                                            Click on a picture card to turn it over and reveal an image of something
-                                            that
-                                            pollutes our oceans.
-                                            <br>
-                                            <br>
-                                            If you can find its pair, you have found a match! When you find a match,
-                                            both cards
-                                            will stay faced up and your 'matched cards' score will go up by 1. If you
-                                            have
-                                            not chosen two identical cards, they will automatically turn back around.
-                                            <br>
-                                            <br>
-                                            To win the game you must find all the matches before the time runs out. The
-                                            ocean and its wildlife are counting on you!</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
+            <h1 class="heading">Ocean Clean Up</h1>
+            <h2>Memory Card Game</h2>
+        </div>
+        <!-- /. Welcome section action="/game.html"-->
+    </header>
+    <!-- /.header -->
+    <!-- Welcome section -->
+    <div class="container">
+        <div class="game-instructions">
+            <div class="col-12">
+                <p>
+                    <span id="player-name"></span>Can you remember where the
+                    rubbish is and clean up the ocean before the time runs out?
+                    <br>
+                    Dive down and click the 'START GAME'
+                    button to start the countdown timer and unlock the game board
+                </p>
+                <button class="start-button button center button-curser" onclick="startGame()">Start Game</button>
+                <div class="option-buttons">
+                    <button type="button"
+                        onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/memorygame.html'"
+                        class="button-sm" data-toggle="modal">
+                        Restart
+                    </button>
+                    <button class="button-sm center button-curser"
+                        onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/index.html'">New
+                        Player</button>
+                    <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
+                        How to play
+                    </button>
+                    <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog" aria-labelledby="howtoplay-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title center" id="howtoplay-modal">HOW TO PLAY</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="how-to-play">Once the game has loaded, you have 50 seconds to find all
+                                        the matching
+                                        picture cards.
+                                        Click on a picture card to turn it over and reveal an image of something
+                                        that
+                                        pollutes our oceans.
+                                        <br>
+                                        <br>
+                                        If you can find its pair, you have found a match! When you find a match,
+                                        both cards
+                                        will stay faced up and your 'matched cards' score will go up by 1. If you
+                                        have
+                                        not chosen two identical cards, they will automatically turn back around.
+                                        <br>
+                                        <br>
+                                        To win the game you must find all the matches before the time runs out. The
+                                        ocean and its wildlife are counting on you!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="game-winner" tabindex="-1" role="dialog"
-                            aria-labelledby="game-winner-modal" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3 class="modal-title center" id="game-winner-modal">CONGRATULATIONS!</h3>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="how-to-play">You managed to clean all the items polluting the ocean
-                                            before the time ran out!
-                                            <br>
-                                            You had <span id=remainingTime></span> seconds to spare!
-                                            <br>
-                                            Thank you so much for all your help. If everyone was as helpful as cleaning
-                                            up the ocean as you then we would have a much
-                                            happier planet! <br>
-                                            Click the button below to play again!</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
-                                            onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/memorygame.html'">Play Again</button>
-                                            <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
-                                            onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/index.html'">New Player</button>
-                                    </div>
+                    </div>
+                    <div class="modal fade" id="game-winner" tabindex="-1" role="dialog"
+                        aria-labelledby="game-winner-modal" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title center" id="game-winner-modal">CONGRATULATIONS!</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="how-to-play">You managed to clean all the items polluting the ocean
+                                        before the time ran out!
+                                        <br>
+                                        You had <span id=remainingTime></span> seconds to spare!
+                                        <br>
+                                        Thank you so much for all your help. If everyone was as helpful as cleaning
+                                        up the ocean as you then we would have a much
+                                        happier planet! <br>
+                                        Click the button below to play again!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
+                                        onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/memorygame.html'">Play
+                                        Again</button>
+                                    <button type="button" class="button-sm btn btn-secondary" data-dismiss="modal"
+                                        onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/index.html'">New
+                                        Player</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /. Welcome section -->
-    </header>
-    <!-- /.header -->
-    <!-- Score container -->
-    <div class="container">
-        <div class="row score-area">
-            <div class="col">
-                <h4 class="matches">Matches Found: <span id="match-count">0</span></h4>
-                <h4 class="countdown">Time left: <span id="countdown">50</span></h4>
+        </div>
+        <!-- /. Welcome section -->
+        <!-- Score container -->
+        <div class="container">
+            <div class="row score-area">
+                <div class="col-lg-12">
+                    <h4 class="matches">Matches Found: <span id="match-count">0</span></h4>
+                    <h4 class="countdown">Time left: <span id="countdown">50</span></h4>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /. Score container -->
+        <!-- /. Score container -->
 
-    <!-- Game container -->
-    <div class="game-container container center">
-        <div class="grid gamegrid">
-            <div class="game-tile tile1" data-image="binbag">
-                <img class="tile-front-face binbag1" src="./assets/images/binbag.png" alt="bin bag">
-                <img class="tile-back-face binbag1" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile2" data-image="binbag">
-                <img class="tile-front-face binbag2" src="./assets/images/binbag.png" alt="bin bag">
-                <img class="tile-back-face binbag2" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile3" data-image="waterbottle">
-                <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile4" data-image="waterbottle">
-                <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile5" data-image="fishingnet">
-                <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile6" data-image="fishingnet">
-                <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile7" data-image="oilspill">
-                <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile8" data-image="oilspill">
-                <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile9" data-image="foodcarton">
-                <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile10" data-image="foodcarton">
-                <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile11" data-image="plasticstraws">
-                <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile12" data-image="plasticstraws">
-                <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile13" data-image="cigaretteend">
-                <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile14" data-image="cigaretteend">
-                <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile15" data-image="glassbottles">
-                <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
-            </div>
-            <div class="game-tile tile16" data-image="glassbottles">
-                <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
-                <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+        <!-- Game container -->
+        <div class="game-container container center">
+            <div class="grid gamegrid">
+                <div class="game-tile tile1" data-image="binbag">
+                    <img class="tile-front-face binbag1" src="./assets/images/binbag.png" alt="bin bag">
+                    <img class="tile-back-face binbag1" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile2" data-image="binbag">
+                    <img class="tile-front-face binbag2" src="./assets/images/binbag.png" alt="bin bag">
+                    <img class="tile-back-face binbag2" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile3" data-image="waterbottle">
+                    <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile4" data-image="waterbottle">
+                    <img class="tile-front-face" src="./assets/images/waterbottle.png" alt="water bottle">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile5" data-image="fishingnet">
+                    <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile6" data-image="fishingnet">
+                    <img class="tile-front-face" src="./assets/images/fishingnet.png" alt="fishing net">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile7" data-image="oilspill">
+                    <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile8" data-image="oilspill">
+                    <img class="tile-front-face" src="./assets/images/oilbarrelspill.png" alt="oil spill">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile9" data-image="foodcarton">
+                    <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile10" data-image="foodcarton">
+                    <img class="tile-front-face" src="./assets/images/foodcarton.png" alt="food carton">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile11" data-image="plasticstraws">
+                    <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile12" data-image="plasticstraws">
+                    <img class="tile-front-face" src="./assets/images/plasticstraws.png" alt="plastic straws">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile13" data-image="cigaretteend">
+                    <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile14" data-image="cigaretteend">
+                    <img class="tile-front-face" src="./assets/images/cigaretteend.png" alt="cigarette end">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile15" data-image="glassbottles">
+                    <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
+                <div class="game-tile tile16" data-image="glassbottles">
+                    <img class="tile-front-face" src="./assets/images/glassbottles.png" alt="glass bottles">
+                    <img class="tile-back-face" src="./assets/images/card_back.png" alt="back of card">
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="assets/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

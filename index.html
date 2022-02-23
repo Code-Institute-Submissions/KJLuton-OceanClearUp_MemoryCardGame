@@ -21,6 +21,12 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- Welcome section -->
+        <div class="welcome-container">
+            <h1 class="heading">Ocean Clean Up</h1>
+            <h2>Memory Card Game</h2>
+        </div>
+        <!-- /. Welcome section action="/game.html"-->
     </header>
     <!-- /.header -->
     <div class="bubble-container">
@@ -43,49 +49,48 @@
             <img src="./assets/images/atmosphere_images/bubble1.png" alt="bubble">
         </div>
     </div>
-    <!-- Welcome section -->
-    <div class="welcome-container">
-        <h1 class="heading">Ocean Clean Up</h1>
-<h2>Memory Card Game</h2>
-    </div>
-    <!-- /. Welcome section action="/game.html"-->
+    <div class="container">
+        <div class="game-rules container center">
+            <form>
+                <h2 id="introduction">Hello! Let's get to know each other a little better.</h2>
+                <br>
+                <p id="p-introduction">Please introduce yourself by typing out your name in the box provided: </p>
+                <div class="form-row center">
+                    <p id="player-name"></p>
+                    <input type="text" id="player-name-entry" placeholder="your name" aria-label="First name">
+                    <input type="button" id="player-name-entry-button" value="Click to add name" class="button-sm"
+                        onclick="playerName();hidePlayernamebox()" />
+                </div>
+            </form>
+            <div id="welcome-message">
+                <p>Did you know that the ocean produces over half of the world's oxygen? That means, without a
+                    healthy ocean, we wouldn't be able to <u>breathe!</u>
+                    <br>
+                    The ocean also covers 70 percent of the Earth's surface and regulates our climate and weather,
+                    making it possible for us to live on the earth.
+                    We need the ocean the ocean to survive but it is currently under threat from
+                    <i>pollution by humans!</i>
+                    <br>
+                    <h3>What is water pollution and how does it get into the ocean?</h3>
 
-    <section class="container center">
-        <div class="game-rules center">
-            <div>
-                <form>
-                    <h2 id="introduction">Hello! Let's get to know each other a little better.</h2>
-                        <br>
-                        <p id="p-introduction">Please introduce yourself by typing out your name in the box provided: </p>
-                    <div class="form-row center">
-                        <p id="player-name"></p>
-                        <input type="text" id="player-name-entry" placeholder="your name" aria-label="First name">
-                        <input type="button" id="player-name-entry-button" value="Click to add name" class="button-sm"
-                            onclick="playerName();hidePlayernamebox()" />
-                    </div>
-                </form>
-                <div id="welcome-message">
-                    <p>Did you know that the ocean produces over half of the world's oxygen? That means, without a
-                        healthy ocean, we wouldn't be able to <u>breathe!</u>
-                        <br>
-                        The ocean also covers 70 percent of the Earth's surface and regulates our climate and weather, making it possible for us to live on the earth.
-                        We need the ocean the ocean to survive but it is currently under threat from
-                        <i>pollution by humans!</i>
-                        <br>
-                        <h3>What is water pollution and how does it get into the ocean?</h3>
-                        
-                        <p>Each year, humans put more rubbish (including plastics, chemicals, oils and much more) into the water around the world. It’s dumped, pumped, spilled, leaked and even washed out with our laundry.
+                    <p>Each year, humans put more rubbish (including plastics, chemicals, oils and much more) into the
+                        water around the world. It’s dumped, pumped, spilled, leaked and even washed out with our
+                        laundry.
                         <br>
                         <h3>It's not too late to save the ocean and our planet!</h3>
-                        <p>We need to remove the rubbsih that is in the ocean AND stop putting rubbish there. By recycling and reusing plastics and other materials, 
+                        <p>We need to remove the rubbsih that is in the ocean AND stop putting rubbish there. By
+                            recycling and reusing plastics and other materials,
                             you can help make a difference.
-                        But first you'll need to know what you're looking for! Play this matching game to help you identify some of the biggest water polluting problems. Good luck, and
-                        don't take too long, there is a time limit!</p>
-                    <button class="button center" onclick="window.location.href='//kjluton.github.io/OceanClearUp_MemoryCardGame/memorygame.html'">PLAY GAME</button>
-                </div>
+                            But first you'll need to know what you're looking for! Play this matching game to help you
+                            identify some of the biggest water polluting problems. Good luck, and
+                            don't take too long, there is a time limit!</p>
+                        <button class="button center"
+                            onclick="window.location.href='./memorygame.html'">PLAY
+                            GAME</button>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

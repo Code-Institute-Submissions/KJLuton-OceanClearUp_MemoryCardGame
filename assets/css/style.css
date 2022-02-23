@@ -1,23 +1,14 @@
 /* --------- Global style */
 
-html { 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
 body {
-    background: url("underthesea.jpg") no-repeat center fixed;
     height: 100vh;
     margin: 0;
     font-family: 'Gluten', cursive;
     color: #f0f8ff;
-    background: none;
-}
-
-.row {
-    margin: 0;
+    background-image: url('/assets/images/underthesea.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
@@ -46,7 +37,6 @@ h4 {
 p {
     font-family: 'Dongle', sans-serif;
     color: #f0f8ff;
-    font-size: 3vh;
 }
 
 .how-to-play {
@@ -185,6 +175,12 @@ p {
     z-index: 1;
 }
 
+.game-instructions {
+    text-align: center;
+    background: rgb(0 123 255 / 89%);
+    margin-top: 20px;
+}
+
 /* --------- Modals */
 .modal-content {
     background-color: #004085;
@@ -209,7 +205,8 @@ p {
 
 /* --------- score area and countdown*/
 .score-area {
-    margin: 20px;
+    margin-top: 10px;
+    height: 10vh;
     background: #004085;
     padding: 20px;
     justify-content: space-between;
@@ -270,6 +267,25 @@ img {
     width: 150px;
     height: 150px;
     border-radius: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+    .gamegrid {
+        padding: 10px;
+        justify-content: center;
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .game-tile {
+        height: 75px;
+        width: 75px;
+    }
 }
 
 .tile-front-face,
