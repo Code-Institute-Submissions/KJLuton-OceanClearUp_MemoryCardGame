@@ -51,7 +51,10 @@
                     <h5 class="modal-title">Better luck next time</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Oops! - you ran out of time. You didn't manage to find all the rubbish in the ocean this time. Click below to restart the game and play again.</p>
+                    <p>Oops! - you ran out of time. 
+                        You found <span id=match-count>0</span> out of 8 matches.
+                        You didn't manage to find all the rubbish in the ocean this time.
+                        Click below to restart the game and play again.</p>
                 </div>
                 <div class="modal-footer">
                     <div class="option-buttons">
@@ -70,24 +73,17 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title center" id="howtoplay-modal">HOW TO PLAY</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
-                    <p class="how-to-play">Once the game has loaded, you have 50 seconds to find all
-                        the matching
-                        picture cards.
-                        Click on a picture card to turn it over and reveal an image of something
-                        that
-                        pollutes our oceans.
+                    <p class="how-to-play">When you click the "START GAME" button, you will have 50 seconds to find all
+                        the matching picture cards.
+                        Click on a picture card to turn it over and reveal an image of something that pollutes our
+                        oceans.
                         <br>
                         <br>
-                        If you can find its pair, you have found a match! When you find a match,
-                        both cards
+                        If you can find its pair, you have found a match! When you find a match, both cards
                         will stay faced up and your 'matched cards' score will go up by 1. If you
-                        have
-                        not chosen two identical cards, they will automatically turn back around.
+                        have not found two identical cards, they will automatically turn back around.
                         <br>
                         <br>
                         To win the game you must find all the matches before the time runs out. The
@@ -107,9 +103,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title center" id="game-winner-modal">CONGRATULATIONS!</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
                     <p class="how-to-play">You managed to clean all the items polluting the ocean
