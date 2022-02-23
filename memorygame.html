@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- Instructions modal -->
+    <!-- instructions modal -->
     <div class="modal fade" id="game-instructions" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -25,25 +25,24 @@
                     <h5 class="modal-title">Time to clean up the ocean</h5>
                 </div>
                 <div class="modal-body">
-                    <p><span id="player-name"></span>Can you remember where the
-                        rubbish is and clean up the ocean before the time runs out?
+                    <p>Can you remember where the rubbish is and clean up the ocean before the time runs out?
                         Dive down and click the 'START GAME' button to start the countdown timer and unlock the game
-                        board</p>
+                        board.</p>
                 </div>
                 <div class="modal-footer">
-                <div class="option-buttons">
-                    <button class="button center button-curser" data-dismiss="modal"
-                        onclick="startGame()">Start Countdown Timer</button>
-                    <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
-                        How to play
-                    </button>
-                </div>
+                    <div class="option-buttons">
+                        <button class="button center button-curser" data-dismiss="modal" onclick="startGame()">Start
+                            Game</button>
+                        <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
+                            How to play
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ./ Instructions modal -->
-    <!-- Game over modal -->
+    <!-- ./ instructions modal -->
+    <!-- game over modal -->
     <div class="modal fade" id="game-over" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -55,37 +54,16 @@
                     <p>GAME OVER - you ran out of time.</p>
                 </div>
                 <div class="modal-footer">
-                <div class="option-buttons">
-                    <button class="button center button-curser" data-dismiss="modal"
-                        onclick="window.location.href='./memorygame.html'">Restart Game</button>
-                </div>
+                    <div class="option-buttons">
+                        <button class="button center button-curser" data-dismiss="modal"
+                            onclick="window.location.href='./memorygame.html'">Restart Game</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ./ Game over modal -->
-    <!-- Header -->
-    <header>
-        <!-- Welcome section -->
-        <div class="welcome-container">
-            <h1 class="heading">Ocean Clean Up</h1>
-            <h2>Memory Card Game</h2>
-            <div class="option-buttons">
-                <button type="button" onclick="window.location.href='./memorygame.html'" class="button-sm"
-                    data-toggle="modal">
-                    Restart
-                </button>
-                <button class="button-sm center button-curser" onclick="window.location.href='./index.html'">New
-                    Player</button>
-                <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
-                    How to play
-                </button>
-            </div>
-        </div>
-        <!-- /. Welcome section action="/game.html"-->
-    </header>
-    <!-- /.header -->
-    <!-- Welcome section -->
+    <!-- ./ game over modal -->
+    <!-- how to play modal -->
     <div class="modal fade" id="howtoplay" tabindex="-1" role="dialog" aria-labelledby="howtoplay-modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -121,6 +99,8 @@
             </div>
         </div>
     </div>
+    <!-- ./ how to play modal -->
+    <!-- game winner modal -->
     <div class="modal fade" id="game-winner" tabindex="-1" role="dialog" aria-labelledby="game-winner-modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -153,10 +133,28 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    <!-- /. Welcome section -->
+    <!-- ./ game winner modal -->
+    <!-- Header -->
+    <header>
+        <!-- Welcome section -->
+        <div class="welcome-container">
+            <h1 class="heading">Ocean Clean Up</h1>
+            <h2>Memory Card Game</h2>
+            <div class="option-buttons">
+                <button type="button" onclick="window.location.href='./memorygame.html'" class="button-sm"
+                    data-toggle="modal">
+                    Restart
+                </button>
+                <button class="button-sm center button-curser" onclick="window.location.href='./index.html'">New
+                    Player</button>
+                <button type="button" class="button-sm" data-toggle="modal" data-target="#howtoplay">
+                    How to play
+                </button>
+            </div>
+        </div>
+        <!-- /. Welcome section action="/game.html"-->
+    </header>
+    <!-- /.header -->
     <!-- Score container -->
     <div class="container">
         <div class="row score-area">
@@ -167,7 +165,6 @@
         </div>
     </div>
     <!-- /. Score container -->
-
     <!-- Game container -->
     <div class="game-container container center">
         <div class="grid gamegrid">
