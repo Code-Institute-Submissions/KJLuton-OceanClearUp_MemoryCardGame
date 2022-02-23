@@ -120,7 +120,7 @@ function checkPlayer() {
 	
 	//if player name is left empty alert the user to enter their name and don't continue
 	if (obj.value == "") {
-		alert("Please enter your name")
+		alert("Oops! To play the game, please introduce yourself and enter your name.")
 	} else {
 		hidePlayernamebox()
 	}
@@ -128,7 +128,7 @@ function checkPlayer() {
 
 function playerName() {
 	var obj = document.getElementById("player-name-entry");
-	var str = "Hello " + obj.value;
+	var str = "Hello " + obj.value + ",";
 	var obj2 = document.getElementById("player-name");
 	obj2.innerHTML = str;
 }

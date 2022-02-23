@@ -43,14 +43,6 @@ p {
     font-size: 2vh;
 }
 
-.countdown {
-    float: right;
-}
-
-.matches {
-    float: left;
-}
-
 /* --------- Buttons */
 
 .button {
@@ -86,7 +78,7 @@ p {
 
 /* --------- Welcome Page */
 #player-name {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 #welcome-message {
@@ -176,7 +168,7 @@ p {
 .welcome-container {
     text-align: center;
     background-color: rgb(0 123 255 / 50%);
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
     width: 100%;
     z-index: 1;
 }
@@ -215,7 +207,7 @@ p {
     height: 10vh;
     background: #004085;
     padding: 20px;
-    justify-content: space-between;
+    text-align: center;
 }
 
 /* --------- Game area */
