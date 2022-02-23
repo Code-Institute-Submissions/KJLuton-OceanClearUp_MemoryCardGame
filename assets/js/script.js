@@ -1,8 +1,6 @@
 //Wait for the DOM to finish loading before running game 
 if (document.readyState === 'loading') {
-	document.addEventListener('DOMContentLoaded', gameReady());
-} else {
-	gameReady();
+	document.addEventListener('DOMContentLoaded', InstructionsModal());
 }
 
 const tiles = document.querySelectorAll('.game-tile');
@@ -11,14 +9,16 @@ let hasTurnedTileOver = false;
 let firstTile, secondTile;
 let score = 0;
 
-function gameReady() {
-	
+//start up screen instructions
+function InstructionsModal(){
+	$("#game-instructions").modal('show');
 }
 
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
-	lockBoard = false;
+	$("#game-instructions").modal('hide');
 	countdownTimer()
+	lockBoard = false;
 	score = 0;
 }
 
@@ -32,6 +32,7 @@ function countdownTimer() {
 		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
 			document.getElementById("countdown").innerHTML = "GAME OVER";
+			lockBoard = true;
 		} else { // timer continues until zero
 			document.getElementById("countdown").innerHTML = timeleft;
 		}
