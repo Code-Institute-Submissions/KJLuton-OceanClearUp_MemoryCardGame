@@ -94,6 +94,12 @@ p {
 }
 
 /* --------- bubbles */
+
+.bubbles {
+    height: 100px;
+    width: 100px;
+}
+
 .bubble-container {
     z-index: 3;
     position: fixed;
@@ -196,7 +202,7 @@ p {
 
 .show {
 	visibility: visible !important;
-	opacity: 100 !important;
+	opacity: 100;
 }
 
 .hide {
