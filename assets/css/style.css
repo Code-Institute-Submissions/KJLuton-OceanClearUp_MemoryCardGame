@@ -35,6 +35,7 @@ h4 {
 }
 
 p {
+    font-size: 2vh;
     font-family: 'Dongle', sans-serif;
     color: #f0f8ff;
 }
@@ -78,7 +79,7 @@ p {
 
 /* --------- Welcome Page */
 #player-name {
-    font-size: 3rem;
+    font-size: 3vh;
 }
 
 #welcome-message {
