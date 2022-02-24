@@ -17,7 +17,7 @@ function InstructionsModal(){
 //Unlocks board, initiates countdown timer and allows player to start making tile matches.
 function startGame() {
 	$("#game-instructions").modal('hide');
-	countdownTimer()
+	countdownTimer();
 	lockBoard = false;
 	score = 0;
 }
@@ -56,7 +56,7 @@ function turnTileOver() {
 		hasTurnedTileOver = false;
 		secondTile = this;
 
-		checkForMatch()
+		checkForMatch();
 	}
 }
 
@@ -124,9 +124,9 @@ function checkPlayer() {
 	
 	//if player name is left empty alert the user to enter their name and don't continue
 	if (obj.value == "") {
-		alert("Oops! To play the game, please introduce yourself and enter your name.")
+		alert("Oops! To play the game, please introduce yourself and enter your name.");
 	} else {
-		hidePlayernamebox()
+		hidePlayernamebox();
 	}
 }
 
@@ -140,7 +140,7 @@ function playerName() {
 
 //Removing name box and button when player name added.
 function hidePlayernamebox() {
-	playerName()
+	playerName();
 	var getName = $("#player-name-entry-button");
 	getName.hide();
 	$("#player-name-entry").hide();
