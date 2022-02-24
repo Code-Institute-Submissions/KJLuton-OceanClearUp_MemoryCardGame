@@ -28,6 +28,7 @@ function countdownTimer() {
 	var timeleft = 49;
 	var countdownTimer = setInterval(function () {
 		if (score === 8) {
+			removeRubbish();
 			congratulationsModal();
 		} else if (timeleft <= 0) { //Timer run out - game over message
 			clearInterval(countdownTimer);
@@ -94,7 +95,6 @@ function incrementScore() {
 	document.getElementById("match-count").innerText = score;
 }
 
-
 //congratulations when all tiles match. Show modal and time left.
 function congratulationsModal(){
 	$("#game-winner").modal('show');
@@ -102,6 +102,10 @@ function congratulationsModal(){
 	//showing total time 
 	finalTime = document.getElementById("countdown").innerText;
 	document.getElementById("remainingTime").innerHTML = finalTime;
+}
+
+function removeRubbish() {
+	$("#dirty-area").addClass("hide");
 }
 
 //game over when the countdowntime runs out. Show modal and time left.
@@ -126,6 +130,7 @@ function checkPlayer() {
 	}
 }
 
+//Get the players name from the text box and insert the value into the element.
 function playerName() {
 	var obj = document.getElementById("player-name-entry");
 	var str = "Hello " + obj.value + ",";
