@@ -117,6 +117,18 @@ function gameoverModal(){
 	document.getElementById("remainingTime").innerHTML = finalTime;
 }
 
+// Assistance from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
+(function shuffle() {
+	tiles.forEach(tile => {
+		let randomPos = Math.floor(Math.random() * 16);
+		tile.style.order = randomPos;
+	});
+})();
+
+tiles.forEach(tiles => {
+	tiles.addEventListener('click', turnTileOver);
+});
+
 //Welcome page
 //Allowing player to customise the game and add their name.
 function checkPlayer() {
@@ -148,20 +160,6 @@ function hidePlayernamebox() {
 	$("#p-introduction").hide();
 	$("#welcome-message").show();
 }
-
-// Assistance from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
-(function shuffle() {
-	tiles.forEach(tile => {
-		let randomPos = Math.floor(Math.random() * 16);
-		tile.style.order = randomPos;
-	});
-})();
-
-tiles.forEach(tiles => {
-	tiles.addEventListener('click', turnTileOver);
-});
-
-
 
 //pop bubbles individually
 $("#bubble1").mouseover(popBubble1);

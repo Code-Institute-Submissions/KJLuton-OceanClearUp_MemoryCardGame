@@ -32,12 +32,12 @@ Disclaimer: This website has been built for entertainment and education purposes
 # UX
 
 ## Game goals
-The goal of the website is to present an online memory game which is fun for the user to play. The game also intends to educate the player into the effects of the ocean on teh enviroment.
+The goal of the website is to present an online memory game which is fun for the user to play. The game also intends to educate the player into the effects of the ocean on the enviroment.
 
 ### How to play
 Once the game has loaded, the player has 50 seconds to find all the matching picture cards. 
 
-The player must click on a turned over picture card to reveal the picture on the other side. The pictures on the front face will be of items that pollute the oceans. If the player can find its matching picture card, they will have found a match. when they find a match, the card stay faced up and the 'matched cards' score will go up by 1. If they have not chosen two identical cards, the cards will automatically turn back around. 
+The player must click on a turned over picture card to reveal the picture on the other side. The pictures on the front face will be of items that pollute the oceans. If the player can find its matching picture card, they will have found a match. When the player finds a match, the card will stay faced up. If they have not chosen two identical cards, the cards will automatically turn back around. 
 
 To win the game the player must find all the matches before the time runs out.
 
@@ -47,13 +47,13 @@ To play an online memory game and have fun whilst playing.
 ## User stories
 
 User 1: 
-8 year old wanting to play a fun game online. Has a lot of time to play the game. Plays a lot of games on her ipad. Wants to be able to play games when she is in the back of the car going to school. 
+Jonny is an 8 year old who wants to play a fun game online. He has a lot of time to play games online and he plays a lot of games on his ipad. He also wants to be able to play games when he is in the back of the car going to school. 
 
 User 2:
-30 year old, male, georgraphy teacher looking for online educational games to share with his class to play at home. 
+Jake is a 30 year old, male, georgraphy teacher looking for online educational games to share with his class to play at home. 
 
 User 3: 
-12 year old boy learning about the ocean and effects of single use plastics. Gets bored in school easily and is looking for a fun way to learn about the enviroment. 
+Lucy is a 12 year old learning about the ocean and effects of single use plastics. She gets bored in school easily and is looking for a fun way to learn about the enviroment. 
 
 
 ## Wireframes
@@ -89,30 +89,38 @@ _______
 # Features and Functions
 
 The website game consists of 2 pages. 
-1) A welcome page 
-2) A game page 
+## 1) A welcome page:
+<br>
+
+![welcome-page](/assets/images/readme_images/welcome-page.png)
 
 The welcome page has the following features: 
 
 1. Welcomes the user to the game. 
 2. Offers a customisable aspect to the game by asking the player their name. 
+3. Bubbles moving up the page to provide atmosphere for the player. 
+4. The ability to "pop" the bubbles on the screen. 
+<br>
+
+## 2) A game page 
+![game-page](/assets/images/readme_images/game-page.png)
 
 The gamepage has the following features and functions: 
 
 1.	Shuffle picture tiles on game start or restart. 
 2.	Game should know how to handle matched and unmatched pictures.
-3.	Game should display the current number of matches the player has found. 
-4.	The game should show a countdown timer when the player presses ‘start game’.
-5.	When the player wins the game, the timer stops and a congratulations message shows with time left score.
-6.	A restart button should allow the player reset the game board, the countdown timer and the number of matches found.
-7.	A congratulations modal should appear when the player wins while showing a button to play again. 
+3.	The game should show a countdown timer when the player presses ‘start game’.
+4.	If the player wins the game, the timer stops and a congratulations message shows with time left score.
+5. 	If timer runs out, alert message will display a "game over' message and include the number of matches the player found. 
+6.	A restart button allows the current player to reset the game board, the countdown timer and the number of matches found.
+7.  Ability to play on multiple screen sizes. 
 
 ## Future implementations
 
-- when cards are matched, make them disappear instantly as though the game player is cleaning the ocean. 
+- When cards are matched, make them disappear instantly as though the game player is cleaning the ocean. 
 - Add different levels of skill to appeal for older audiences and player growth. easy, medium, hard. This could be by either reducing the amount of time the player has to clean the board or by increasing the amount of squares/matches to be found on the board. 
 - Adding music to the game to give it more atmostphere. Background music of bubbles and under water sounds. Then, add additional sounds when the player gets a correct match or incorrect match. 
-- Adding additional ediucational elements to the page so the player can learn more about how they can help the enviroment, do their part to clean the oceans and reduce water pollution. 
+- Adding additional educational elements to the page so the player can learn more about how they can help the enviroment, do their part to clean the oceans and reduce water pollution. 
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -202,21 +210,18 @@ Due to using the Bootsrap plugin, I used the direct code tool to validate my CSS
 
 ## JShint Validation
 
-There are 23 functions in this file.
-
+There are 25 functions in this file.
 Function with the largest signature take 1 arguments, while the median is 0.
-
-Largest function has 8 statements in it, while the median is 2.
-
+Largest function has 9 statements in it, while the median is 2.
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
-
-16 warnings due to Jquery coding.      
+9 warnings due to Jquery coding.
 
 ### Issues Found During Game Development
 
-- Getting tiels squares to sit nicely on a grid and have one card overlay the other. Changed the position to 
+- Getting tiles squares to sit nicely on a grid and have one card overlay the other. 
+- Allowing game grid to sit nicely on a mobile screen. When played on a mobile, the grid would fall off the screen. To fix this a media query was placed on the grid template columns and the size of the tiles. 
 - If tiles were flipped too fast it thought two incorrect tiles are the same and overites script. 
-- Setting up hover element in javascript meant that all tiles were hilighted when 'mouseon'. Decided to create this effect with css hover function following advice from mentor.
+- Setting up hover element in javascript meant that all tiles were highlighted when 'mouseon'. Decided to create this effect with css hover function following advice from mentor.
 - Working out how to stop timer - when number of matches === (tiles.length/2), stop timer. Doesn't recognise "score" as "8" so it is always false. Created a variable of 'score' which could be === 8 instead of trying to read the text value of the span. 
 
 [Back to table of contents](#table-of-contents)
